@@ -18,6 +18,7 @@ export const Route = createFileRoute("/_site/blog/$slug")({
       };
     }
     const { post } = loaderData;
+    const postUrl = `https://sparkspsychotherapy.ca/blog/${post.slug}`;
     return {
       meta: [
         { title: `${post.title} | Sparks Psychotherapy Services` },
@@ -26,6 +27,30 @@ export const Route = createFileRoute("/_site/blog/$slug")({
         { property: "og:description", content: post.excerpt },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
+      ],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: post.title,
+            description: post.excerpt,
+            image: `https://sparkspsychotherapy.ca${post.image}`,
+            datePublished: post.date,
+            author: {
+              "@type": "Organization",
+              name: "Sparks Psychotherapy Services",
+              url: "https://sparkspsychotherapy.ca/",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Sparks Psychotherapy Services",
+              url: "https://sparkspsychotherapy.ca/",
+            },
+            mainEntityOfPage: postUrl,
+          }),
+        },
       ],
     };
   },

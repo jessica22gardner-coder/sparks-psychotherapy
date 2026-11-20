@@ -13,20 +13,63 @@ export const Route = createFileRoute("/_site/")({
     meta: [
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:type", content: "website" },
-      { title: "Sparks Psychotherapy Services, In-person & Virtual Therapy" },
+      { title: "Psychotherapist in Oakville & the GTA | Sparks Psychotherapy Services" },
       {
         property: "og:title",
-        content: "Sparks Psychotherapy Services, In-person & Virtual Therapy",
+        content: "Psychotherapist in Oakville & the GTA | Sparks Psychotherapy Services",
       },
       {
         property: "og:description",
         content:
-          "Compassionate psychotherapy for adults navigating anxiety, depression, grief, relationships and life transitions. In-person and virtual sessions.",
+          "In-person psychotherapy in Oakville and online therapy across the GTA and Ontario, including Burlington, Toronto, Mississauga, Brampton, Hamilton and London.",
       },
       {
         name: "description",
         content:
-          "Compassionate psychotherapy for adults navigating anxiety, depression, grief, relationships and life transitions. In-person and virtual sessions.",
+          "In-person psychotherapy in Oakville and online therapy across the GTA and Ontario, including Burlington, Toronto, Mississauga, Brampton, Hamilton and London.",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          name: "Sparks Psychotherapy Services",
+          description:
+            "Compassionate in-person and online psychotherapy for adults in Oakville, the Greater Toronto Area and Ontario, supporting anxiety, depression, grief, relationships and life transitions.",
+          url: "https://sparkspsychotherapy.ca/",
+          telephone: "+1-365-977-0155",
+          email: "info@sparkspsychotherapy.ca",
+          areaServed: [
+            { "@type": "City", name: "Oakville" },
+            { "@type": "City", name: "Burlington" },
+            { "@type": "City", name: "Toronto" },
+            { "@type": "City", name: "Mississauga" },
+            { "@type": "City", name: "Brampton" },
+            { "@type": "City", name: "Hamilton" },
+            { "@type": "City", name: "London" },
+            { "@type": "AdministrativeArea", name: "Greater Toronto Area" },
+            { "@type": "AdministrativeArea", name: "Ontario" },
+          ],
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Psychotherapy Services",
+            itemListElement: [
+              "Anxiety & Stress",
+              "Depression",
+              "Emotional Wellness",
+              "Eating Disorders",
+              "Couples Counselling",
+              "Teen Therapy",
+              "Adoption Counselling",
+              "Family Therapy",
+            ].map((name) => ({
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name },
+            })),
+          },
+        }),
       },
     ],
   }),
@@ -246,6 +289,39 @@ function HomePage() {
             Mississaugas of the Credit First Nation. I acknowledge this land with gratitude and
             commit to ongoing learning and respect.
           </p>
+        </div>
+      </section>
+
+      {/* WHERE I PRACTICE */}
+      <section className="bg-secondary/25 py-20 md:py-28">
+        <div className="mx-auto max-w-4xl px-6 text-center space-y-6">
+          <p className="text-sm tracking-widest uppercase text-muted-foreground">
+            Where I Practice
+          </p>
+          <h2 className="text-4xl md:text-5xl">In-person in Oakville, online across Ontario</h2>
+          <p className="text-foreground/80 max-w-2xl mx-auto">
+            I offer in-person therapy sessions in Oakville, and secure online therapy for adults
+            across the Greater Toronto Area and Ontario, wherever you are.
+          </p>
+          <ul className="flex flex-wrap justify-center gap-3 pt-2">
+            {[
+              "Oakville",
+              "Burlington",
+              "Toronto",
+              "Mississauga",
+              "Brampton",
+              "Hamilton",
+              "London",
+            ].map((city) => (
+              <li
+                key={city}
+                className="bg-card border border-border rounded-full px-5 py-2 text-sm text-foreground/85 shadow-soft"
+              >
+                {city}
+              </li>
+            ))}
+          </ul>
+          <p className="text-foreground/75">Online sessions are available anywhere in Ontario.</p>
         </div>
       </section>
 

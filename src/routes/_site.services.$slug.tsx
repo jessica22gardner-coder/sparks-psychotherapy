@@ -58,11 +58,7 @@ function ServiceDetail() {
           className={`aspect-square overflow-hidden rounded-3xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-soft`}
         >
           {service.image ? (
-            <img
-              src={service.image}
-              alt={service.title}
-              className="h-full w-full object-cover scale-90"
-            />
+            <img src={service.image} alt={service.title} className="h-full w-full object-cover" />
           ) : (
             <Icon size={120} strokeWidth={1.1} className="text-heading opacity-85" />
           )}

@@ -202,7 +202,7 @@ function Header() {
             Contact
           </Link>
           <a
-            href="https://aws-portal.owlpractice.ca/sparks/booking"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
@@ -262,7 +262,7 @@ export function SiteLayout() {
       </main>
       <Footer />
       <a
-        href="https://aws-portal.owlpractice.ca/sparks/booking"
+        href={BOOKING_URL}
         target="_blank"
         rel="noopener noreferrer"
         className="hidden md:inline-flex fixed top-4 right-4 z-50 bg-sand text-sand-foreground rounded-full px-6 py-3 uppercase tracking-wider text-xs font-medium hover:opacity-90 transition shadow-soft"
@@ -273,12 +273,20 @@ export function SiteLayout() {
   );
 }
 
+export const BOOKING_URL = "https://aws-portal.owlpractice.ca/sparks/booking";
+
 export function CtaButton({ to, children }: { to: string; children: React.ReactNode }) {
+  const className =
+    "inline-block bg-sand text-sand-foreground rounded-full px-8 py-4 uppercase tracking-widest text-xs font-medium hover:opacity-90 transition shadow-soft";
+  if (to.startsWith("http")) {
+    return (
+      <a href={to} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
   return (
-    <Link
-      to={to}
-      className="inline-block bg-sand text-sand-foreground rounded-full px-8 py-4 uppercase tracking-widest text-xs font-medium hover:opacity-90 transition shadow-soft"
-    >
+    <Link to={to} className={className}>
       {children}
     </Link>
   );

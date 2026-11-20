@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CtaButton } from "@/components/site-layout";
+import { BOOKING_URL, CtaButton } from "@/components/site-layout";
 
 export const Route = createFileRoute("/_site/faq")({
   head: () => ({
@@ -80,7 +80,7 @@ function FaqPage() {
       </section>
 
       <section className="text-center pb-20 px-6">
-        <CtaButton to="/contact">Book a Consultation</CtaButton>
+        <CtaButton to={BOOKING_URL}>Book a Consultation</CtaButton>
       </section>
     </>
   );

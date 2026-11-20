@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import chair from "@/assets/therapist-chair.jpg";
 import jessPortrait from "@/assets/jess-portrait-2.jpg";
 import { Play } from "lucide-react";
-import { CtaButton } from "@/components/site-layout";
+import { BOOKING_URL, CtaButton } from "@/components/site-layout";
 
 export const Route = createFileRoute("/_site/about")({
   head: () => ({
@@ -94,7 +94,7 @@ function AboutPage() {
             </button>
           </div>
           <div className="pt-4">
-            <CtaButton to="/contact">Book a Consultation</CtaButton>
+            <CtaButton to={BOOKING_URL}>Book a Consultation</CtaButton>
           </div>
         </div>
       </section>

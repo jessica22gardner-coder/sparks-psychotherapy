@@ -1,5 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { CtaButton } from "@/components/site-layout";
+import { createFileRoute } from "@tanstack/react-router";
+import { BOOKING_URL, CtaButton } from "@/components/site-layout";
 import { therapists } from "@/lib/therapists-data";
 import jessPortrait from "@/assets/jess-portrait-2.jpg";
 
@@ -84,19 +84,21 @@ function TherapistsPage() {
                   ))}
                 </div>
               </div>
-              <Link
-                to="/contact"
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-2 self-start uppercase tracking-widest text-xs text-primary border-b border-primary pb-1"
               >
                 Book a Consultation
-              </Link>
+              </a>
             </div>
           </article>
         ))}
       </section>
 
       <section className="text-center pb-20 px-6">
-        <CtaButton to="/contact">Schedule a Free Connection Call</CtaButton>
+        <CtaButton to={BOOKING_URL}>Schedule a Free Connection Call</CtaButton>
       </section>
     </>
   );

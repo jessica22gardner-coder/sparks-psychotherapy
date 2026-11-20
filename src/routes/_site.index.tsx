@@ -6,7 +6,7 @@ import bentoCouple from "@/assets/bento-couple.jpg";
 import bentoYoungMan from "@/assets/bento-young-man.jpg";
 import bentoTwoWomen from "@/assets/bento-two-women.jpg";
 import bentoCoupleWalking from "@/assets/bento-couple-walking.jpg";
-import { CtaButton } from "@/components/site-layout";
+import { BOOKING_URL, CtaButton } from "@/components/site-layout";
 
 export const Route = createFileRoute("/_site/")({
   head: () => ({
@@ -61,7 +61,7 @@ function HomePage() {
             Therapy offers a space to better understand your emotions and begin to reconnect with
             yourself and others.
           </p>
-          <CtaButton to="/contact">Schedule a Free Connection Call</CtaButton>
+          <CtaButton to={BOOKING_URL}>Schedule a Free Connection Call</CtaButton>
         </div>
       </section>
 
@@ -256,7 +256,7 @@ function HomePage() {
             Interested in exploring therapy? I'd be glad to connect.
           </h2>
           <p className="text-foreground/80">Schedule your free connection call today.</p>
-          <CtaButton to="/contact">Book a Consultation</CtaButton>
+          <CtaButton to={BOOKING_URL}>Book a Consultation</CtaButton>
         </div>
       </section>
     </>

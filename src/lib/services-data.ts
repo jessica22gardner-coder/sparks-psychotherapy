@@ -11,6 +11,7 @@ import {
 import type { LucideIcon } from "lucide-react";
 import eatingDisorders from "@/assets/eating-disorders.jpg";
 import teenTherapy from "@/assets/teen-therapy.jpg";
+import couplesCounselling from "@/assets/couples-counselling.jpg";
 
 export type Service = {
   slug: string;
@@ -132,6 +133,7 @@ export const services: Service[] = [
     long: "When distance, conflict, or old wounds have taken root, we work together to soften the patterns beneath the arguments, restore safety, and grow a stronger, more honest bond.",
     icon: Heart,
     gradient: "from-[oklch(0.92_0.05_20)] to-[oklch(0.94_0.03_60)]",
+    image: couplesCounselling,
     overview: [
       "Every couple has a cycle, a pattern that emerges when connection feels threatened. Over time these cycles can harden into distance, resentment, or repeated conflict.",
       "Couples work is not about picking a side. It is about understanding the softer feelings beneath the pattern and building new ways of turning toward each other.",

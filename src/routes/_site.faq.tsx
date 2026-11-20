@@ -25,6 +25,20 @@ export const Route = createFileRoute("/_site/faq")({
           "Common questions about therapy, sessions, fees, and getting started with Sparks Psychotherapy.",
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }),
+      },
+    ],
   }),
   component: FaqPage,
 });

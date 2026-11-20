@@ -26,10 +26,19 @@ export const Route = createFileRoute("/_site/services/$slug")({
     }
     return {
       meta: [
-        { title: `${service.title} | Sparks Psychotherapy` },
-        { name: "description", content: service.short },
-        { property: "og:title", content: `${service.title} | Sparks Psychotherapy` },
-        { property: "og:description", content: service.short },
+        { title: `${service.title} | Sparks Psychotherapy, Oakville & the GTA` },
+        {
+          name: "description",
+          content: `${service.short} In-person therapy in Oakville and online across the GTA and Ontario.`,
+        },
+        {
+          property: "og:title",
+          content: `${service.title} | Sparks Psychotherapy, Oakville & the GTA`,
+        },
+        {
+          property: "og:description",
+          content: `${service.short} In-person therapy in Oakville and online across the GTA and Ontario.`,
+        },
         { property: "og:type", content: "website" },
         { name: "twitter:card", content: "summary_large_image" },
       ],

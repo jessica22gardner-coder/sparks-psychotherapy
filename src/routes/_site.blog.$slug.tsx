@@ -52,13 +52,13 @@ function BlogPostPage() {
         </time>
         <h1 className="text-4xl md:text-5xl font-serif mt-3 leading-tight">{post.title}</h1>
 
-        <div className="mt-10 rounded-3xl overflow-hidden shadow-soft">
+        <div className="mt-10 aspect-[16/9] rounded-3xl overflow-hidden shadow-soft">
           <img
             src={post.image}
             alt={post.imageAlt}
-            width={1024}
-            height={1024}
-            className="w-full h-auto object-cover"
+            width={1920}
+            height={1080}
+            className="w-full h-full object-cover object-center"
           />
         </div>
 

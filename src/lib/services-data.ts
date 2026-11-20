@@ -9,6 +9,7 @@ import {
   Users,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import eatingDisorders from "@/assets/eating-disorders.jpg";
 
 export type Service = {
   slug: string;
@@ -107,6 +108,7 @@ export const services: Service[] = [
     long: "Eating struggles are rarely about food. Together we explore the deeper emotional threads, control, worth, safety, belonging, and rebuild a kinder, more trusting relationship with your body.",
     icon: Utensils,
     gradient: "from-[oklch(0.92_0.05_50)] to-[oklch(0.95_0.03_95)]",
+    image: eatingDisorders,
     overview: [
       "Struggles with food and body are rarely about food and body alone. Underneath there are often threads of control, worth, safety, and belonging.",
       "This work is gentle, weight-inclusive, and paced with care.",

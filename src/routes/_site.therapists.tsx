@@ -6,17 +6,17 @@ import jessPortrait from "@/assets/jess-portrait-2.jpg";
 export const Route = createFileRoute("/_site/therapists")({
   head: () => ({
     meta: [
-      { title: "Our Therapists | Sparks Psychotherapy" },
+      { title: "Your Therapist | Sparks Psychotherapy" },
       {
         name: "description",
         content:
-          "Meet the compassionate team at Sparks Psychotherapy. Registered therapists supporting individuals, couples, families, teens, and children.",
+          "Meet Jess Sparks, Registered Psychotherapist at Sparks Psychotherapy — warm, relational, evidence-based therapy for adults, in person and online.",
       },
-      { property: "og:title", content: "Our Therapists | Sparks Psychotherapy" },
+      { property: "og:title", content: "Your Therapist | Sparks Psychotherapy" },
       {
         property: "og:description",
         content:
-          "Meet the compassionate team at Sparks Psychotherapy. Registered therapists supporting individuals, couples, families, teens, and children.",
+          "Meet Jess Sparks, Registered Psychotherapist at Sparks Psychotherapy — warm, relational, evidence-based therapy for adults, in person and online.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -29,15 +29,17 @@ function TherapistsPage() {
   return (
     <>
       <section className="mx-auto max-w-3xl px-6 py-16 md:py-24 text-center space-y-4">
-        <p className="text-sm tracking-widest uppercase text-muted-foreground">Meet the team</p>
-        <h1 className="text-5xl font-serif">Our Therapists</h1>
+        <p className="text-sm tracking-widest uppercase text-muted-foreground">
+          Meet your therapist
+        </p>
+        <h1 className="text-5xl font-serif">Your Therapist</h1>
         <p className="text-foreground/80">
-          A small, thoughtful team of registered clinicians committed to grounded, compassionate
-          care.
+          Jess Sparks is a Registered Psychotherapist offering warm, grounded, evidence-based care
+          for adults — in person and online.
         </p>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-20 grid md:grid-cols-3 gap-6 lg:gap-8">
+      <section className="mx-auto max-w-md px-6 pb-20">
         {therapists.map((t) => (
           <article
             key={t.slug}

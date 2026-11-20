@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/accordion";
 import { speakingTopics, speakingFormats } from "@/lib/speaking-data";
 import { speakingAudiences } from "@/lib/speaking-audiences";
-import workshop from "@/assets/speaking-workshop.jpg";
+import workshop from "@/assets/speaking-hero.jpg";
 
 const title = "Mental Health Speaking & Workshops | Sparks Psychotherapy";
 const description =
@@ -89,9 +89,9 @@ function SpeakingPage() {
       <section className="relative isolate overflow-hidden">
         <img
           src={workshop}
-          alt="A group sharing a conversation in a welcoming workshop setting"
-          width={1600}
-          height={1008}
+          alt="An audience applauding a speaker during a workshop"
+          width={1000}
+          height={667}
           fetchPriority="high"
           className="absolute inset-0 h-full w-full object-cover"
         />

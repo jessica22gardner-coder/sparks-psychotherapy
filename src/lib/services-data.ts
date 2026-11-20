@@ -1,15 +1,5 @@
-import {
-  Brain,
-  CloudRain,
-  Sparkles,
-  Utensils,
-  Heart,
-  UserRound,
-  HandHeart,
-  Users,
-} from "lucide-react";
+import { Brain, CloudRain, Sparkles, Heart, UserRound, HandHeart, Users } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import eatingDisorders from "@/assets/eating-disorders.jpg";
 import teenTherapy from "@/assets/teen-therapy.jpg";
 import couplesCounselling from "@/assets/couples-counselling.jpg";
 
@@ -100,29 +90,6 @@ export const services: Service[] = [
       "Struggling to set or hold boundaries",
       "Feeling disconnected from your own needs",
       "Wanting a deeper sense of self-trust",
-    ],
-    approach: commonApproach,
-  },
-  {
-    slug: "eating-disorders",
-    title: "Eating Disorders",
-    short: "Gentle, informed care for your relationship with food, body, and self.",
-    long: "Eating struggles are rarely about food. Together we explore the deeper emotional threads, control, worth, safety, belonging, and rebuild a kinder, more trusting relationship with your body.",
-    icon: Utensils,
-    gradient: "from-[oklch(0.92_0.05_50)] to-[oklch(0.95_0.03_95)]",
-    image: eatingDisorders,
-    overview: [
-      "Struggles with food and body are rarely about food and body alone. Underneath there are often threads of control, worth, safety, and belonging.",
-      "This work is gentle, weight-inclusive, and paced with care.",
-      "Together we rebuild a kinder, more trusting relationship with your body and the emotional world it carries.",
-    ],
-    signs: [
-      "Preoccupation with food, weight, or body image",
-      "Restrictive, binge, or purge behaviours",
-      "Guilt or shame around eating",
-      "Rigid rules around meals or movement",
-      "Using food to soothe or avoid emotions",
-      "A body you feel disconnected from or at war with",
     ],
     approach: commonApproach,
   },

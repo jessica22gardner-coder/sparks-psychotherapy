@@ -41,6 +41,15 @@ export const Route = createFileRoute("/_site/")({
           url: "https://sparkspsychotherapy.ca/",
           telephone: "+1-365-977-0155",
           email: "info@sparkspsychotherapy.ca",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "1155 North Service Road",
+            addressLocality: "Oakville",
+            addressRegion: "ON",
+            postalCode: "L6M 3E3",
+            addressCountry: "CA",
+          },
+          geo: { "@type": "GeoCoordinates", latitude: 43.43568, longitude: -79.71445 },
           areaServed: [
             { "@type": "City", name: "Oakville" },
             { "@type": "City", name: "Burlington" },
@@ -300,8 +309,8 @@ function HomePage() {
           </p>
           <h2 className="text-4xl md:text-5xl">In-person in Oakville, online across Ontario</h2>
           <p className="text-foreground/80 max-w-2xl mx-auto">
-            I offer in-person therapy sessions in Oakville, and secure online therapy for adults
-            across the Greater Toronto Area and Ontario, wherever you are.
+            I offer in-person therapy sessions at 1155 North Service Road in Oakville, and secure
+            online therapy for adults across the Greater Toronto Area and Ontario, wherever you are.
           </p>
           <ul className="flex flex-wrap justify-center gap-3 pt-2">
             {[

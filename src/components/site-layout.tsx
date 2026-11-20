@@ -239,6 +239,7 @@ function Footer() {
           <p className="uppercase tracking-wider opacity-75 mb-3">Contact</p>
           <p>1 (365) 977-0155</p>
           <p>info@sparkspsychotherapy.ca</p>
+          <p>1155 North Service Road, Oakville, ON L6M 3E3</p>
           <p className="opacity-80 mt-4 text-xs">
             Operating on the traditional and ancestral lands of the Mississaugas of the Credit First
             Nation.

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import eatingDisorders from "@/assets/eating-disorders.jpg";
+import teenTherapy from "@/assets/teen-therapy.jpg";
 
 export type Service = {
   slug: string;
@@ -153,6 +154,7 @@ export const services: Service[] = [
     long: "Adolescence is full of change and complexity. We create a space that respects your teen's voice, supports their emotional world, and helps them build the self-trust to move through it.",
     icon: UserRound,
     gradient: "from-[oklch(0.92_0.05_190)] to-[oklch(0.94_0.03_95)]",
+    image: teenTherapy,
     overview: [
       "Adolescence is a season of enormous change: identity, relationships, pressure, and possibility all colliding at once.",
       "Teens deserve a space that respects their voice and meets them without judgment.",

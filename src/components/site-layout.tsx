@@ -51,7 +51,7 @@ function Logo({
     <Link
       to="/"
       className="flex items-center leading-none"
-      aria-label="Sparks Psychotherapy Services — home"
+      aria-label="Sparks Psychotherapy Services - home"
     >
       <img
         src={logo}

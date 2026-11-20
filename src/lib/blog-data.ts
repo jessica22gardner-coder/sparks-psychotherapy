@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-08",
     dateLabel: "April 8, 2026",
     excerpt:
-      "Beginning therapy can bring a mixture of relief and uncertainty. You may feel hopeful, nervous, or wonder if you are “doing it right” — all of this is normal.",
+      "Beginning therapy can bring a mixture of relief and uncertainty. You may feel hopeful, nervous, or wonder if you are “doing it right” , all of this is normal.",
     image: beginningStagesImg,
     imageAlt:
       "Two women in conversation in a bright therapy office filled with bookshelves and plants.",
@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-08",
     dateLabel: "April 8, 2026",
     excerpt:
-      "Progress in therapy is often subtle. It rarely looks dramatic or immediate — more often, it unfolds gradually through shifts in awareness, response, and relationship.",
+      "Progress in therapy is often subtle. It rarely looks dramatic or immediate. More often, it unfolds gradually through shifts in awareness, response, and relationship.",
     image: signsWorkingImg,
     imageAlt:
       "A woman writing in a journal at a wooden table by a bright window, a mug beside her.",
@@ -108,7 +108,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-08",
     dateLabel: "April 8, 2026",
     excerpt:
-      "Choosing a Sparks therapist can feel overwhelming. There’s no need to hurry through the process — thoughtful selection supports long-term success.",
+      "Choosing a Sparks therapist can feel overwhelming. There’s no need to hurry through the process. Thoughtful selection supports long-term success.",
     image: therapistMatchImg,
     imageAlt: "A woman seen from behind, sitting in an armchair in a bright, calm room.",
     content: [
@@ -135,7 +135,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-08",
     dateLabel: "April 8, 2026",
     excerpt:
-      "An emotion wheel is a visual tool designed to help you identify and name what you are feeling. For many adults, emotions can feel vague or overwhelming — the wheel provides language and clarity.",
+      "An emotion wheel is a visual tool designed to help you identify and name what you are feeling. For many adults, emotions can feel vague or overwhelming. The wheel provides language and clarity.",
     image: emotionWheelImg,
     imageAlt: "A woman holding an open notebook showing a colourful emotion wheel.",
     content: [
@@ -280,7 +280,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-07",
     dateLabel: "April 7, 2026",
     excerpt:
-      "Most of us were never formally taught how to be emotionally mature. Instead, we absorbed what was modelled for us — and it is a process that is entirely learnable.",
+      "Most of us were never formally taught how to be emotionally mature. Instead, we absorbed what was modelled for us, and it is a process that is entirely learnable.",
     image: emotionalMaturityImg,
     imageAlt: "A younger woman and an older woman sitting close together on a flower-filled porch.",
     content: [
@@ -307,7 +307,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-03",
     dateLabel: "March 3, 2026",
     excerpt:
-      "Emotional processing is a phrase that gets used often but rarely explained clearly. Healthy emotional processing is not dramatic — it is something quieter and steadier.",
+      "Emotional processing is a phrase that gets used often but rarely explained clearly. Healthy emotional processing is not dramatic. It is something quieter and steadier.",
     image: healthyProcessingImg,
     imageAlt: "A woman holding a mug, sitting in an armchair by a bright window.",
     content: [
@@ -355,7 +355,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-02",
     dateLabel: "March 2, 2026",
     excerpt:
-      "Have you ever felt overwhelmed by your emotions or unsure what you’re even feeling? Emotions are not problems to eliminate — they are signals to understand.",
+      "Have you ever felt overwhelmed by your emotions or unsure what you’re even feeling? Emotions are not problems to eliminate. They are signals to understand.",
     image: understandingEmotionsImg,
     imageAlt: "Three people talking with a therapist in a warm, plant-filled room.",
     content: [

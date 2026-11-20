@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 // handler on the hosting account). When that exists, replace the mailto
 // submit below with a POST to that endpoint and show success/failure from
 // its real response. Until then this form only composes an email in the
-// visitor's own mail app — it does not send anything by itself.
+// visitor's own mail app. It does not send anything by itself.
 const CONTACT_EMAIL = "info@sparkspsychotherapy.ca";
 
 export const Route = createFileRoute("/_site/contact")({
@@ -135,7 +135,7 @@ function ContactPage() {
                 Send Message
               </button>
               <p className="text-xs text-muted-foreground">
-                This opens your email app with your message ready to send — the form itself
+                This opens your email app with your message ready to send. The form itself
                 doesn&apos;t send email yet.
               </p>
             </>

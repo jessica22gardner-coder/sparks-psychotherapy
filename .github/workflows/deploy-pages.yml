@@ -1,0 +1,51 @@
+# Deploy the static site to GitHub Pages (preview only).
+# The live site runs on Hostinger from a plain `vite build` (base "/").
+# Pages serves this project site under /sparks-psychotherapy/, so this workflow
+# builds with that base; the router reads it from import.meta.env.BASE_URL.
+# GitHub Pages has no .htaccess, so index.html is copied to 404.html as the
+# SPA fallback for deep links (e.g. /sparks-psychotherapy/about).
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+      - name: Install dependencies
+        run: bun install
+      - name: Build for GitHub Pages
+        run: bunx vite build --base=/sparks-psychotherapy/
+      - name: SPA fallback for deep links
+        run: cp dist/index.html dist/404.html
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

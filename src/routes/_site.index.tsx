@@ -68,7 +68,6 @@ export const Route = createFileRoute("/_site/")({
               "Anxiety & Stress",
               "Depression",
               "Emotional Wellness",
-              "Eating Disorders",
               "Couples Counselling",
               "Teen Therapy",
               "Adoption Counselling",

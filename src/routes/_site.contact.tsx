@@ -84,7 +84,10 @@ function ContactPage() {
             <MapPin className="text-primary mt-1" size={20} />
             <div>
               <p className="text-sm text-muted-foreground uppercase tracking-wider">Sessions</p>
-              <p className="text-foreground/85">In-person & virtual across Ontario</p>
+              <p className="text-foreground/85">
+                In-person at 1155 North Service Road, Oakville, ON L6M 3E3
+              </p>
+              <p className="text-foreground/85">Virtual across Ontario</p>
             </div>
           </div>
         </div>

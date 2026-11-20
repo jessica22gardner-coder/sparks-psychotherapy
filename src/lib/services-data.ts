@@ -22,6 +22,8 @@ export type Service = {
   long: string;
   icon: LucideIcon;
   gradient: string;
+  /** Real photo shown in the service hero. Falls back to the gradient + icon when unset. */
+  image?: string;
   overview: string[];
   signs: string[];
   approach: string[];

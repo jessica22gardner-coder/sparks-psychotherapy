@@ -1,6 +1,6 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, notFound } from "@tanstack/react-router";
 import { CtaButton } from "@/components/site-layout";
-import { getService, services } from "@/lib/services-data";
+import { getService } from "@/lib/services-data";
 import { Check, Leaf } from "lucide-react";
 
 export const Route = createFileRoute("/_site/services/$slug")({
@@ -50,7 +50,6 @@ function ServiceDetail() {
   const service = getService(slug);
   if (!service) throw notFound();
   const Icon = service.icon;
-  const related = services.filter((s) => s.slug !== service.slug).slice(0, 3);
 
   return (
     <>
@@ -58,7 +57,11 @@ function ServiceDetail() {
         <div
           className={`aspect-square overflow-hidden rounded-3xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-soft`}
         >
-          <Icon size={120} strokeWidth={1.1} className="text-heading opacity-85" />
+          {service.image ? (
+            <img src={service.image} alt={service.title} className="h-full w-full object-cover" />
+          ) : (
+            <Icon size={120} strokeWidth={1.1} className="text-heading opacity-85" />
+          )}
         </div>
         <div className="space-y-5">
           <p className="text-sm tracking-widest uppercase text-muted-foreground">Area of Care</p>
@@ -146,31 +149,6 @@ function ServiceDetail() {
         </p>
         <div className="pt-2">
           <CtaButton to="/contact">Reach Out to Us</CtaButton>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="text-3xl mb-10 text-center">Explore related services</h2>
-        <div className="grid sm:grid-cols-3 gap-6">
-          {related.map((s) => {
-            const RIcon = s.icon;
-            return (
-              <Link
-                key={s.slug}
-                to="/services/$slug"
-                params={{ slug: s.slug }}
-                className="bg-card border border-border rounded-3xl p-7 shadow-soft flex flex-col hover:-translate-y-1 transition-transform"
-              >
-                <div
-                  className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${s.gradient} flex items-center justify-center mb-4`}
-                >
-                  <RIcon size={26} strokeWidth={1.3} className="text-heading" />
-                </div>
-                <h3 className="text-lg mb-2">{s.title}</h3>
-                <p className="text-sm text-foreground/75">{s.short}</p>
-              </Link>
-            );
-          })}
         </div>
       </section>
     </>

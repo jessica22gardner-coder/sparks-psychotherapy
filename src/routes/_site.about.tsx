@@ -120,12 +120,10 @@ function AboutPage() {
               </p>
             </div>
           </div>
-          <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
-            <p>
-              I integrate relational and evidence-informed methods such as Emotion-Focused Therapy,
-              Cognitive-Behavioural Therapy, and Psychodynamic Principles.
-            </p>
-          </div>
+          <p className="text-center font-semibold">
+            I integrate relational and evidence-informed methods such as Emotion-Focused Therapy,
+            Cognitive-Behavioural Therapy, and Psychodynamic Principles.
+          </p>
         </div>
       </section>
 

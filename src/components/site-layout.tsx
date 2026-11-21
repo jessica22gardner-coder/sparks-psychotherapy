@@ -247,7 +247,8 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-white/15 py-5 text-center text-xs opacity-80">
-        © {new Date().getFullYear()} Sparks Psychotherapy Services
+        © {new Date().getFullYear()} Sparks Psychotherapy Services · Photo credit: Zsuzsi Pál
+        Photography
       </div>
     </footer>
   );

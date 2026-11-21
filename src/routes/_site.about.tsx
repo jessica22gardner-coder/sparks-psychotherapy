@@ -165,7 +165,6 @@ function AboutPage() {
               Accepting new clients: 1 (365) 977-0155 · info@sparkspsychotherapy.ca
             </p>
           </div>
-          <p className="text-xs text-muted-foreground pt-4">Photo credit: Zsuzsi Pál Photography</p>
         </div>
       </section>
     </>

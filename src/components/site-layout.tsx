@@ -1,5 +1,5 @@
 import { Link, Outlet } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { services } from "@/lib/services-data";
@@ -216,6 +216,31 @@ function Header() {
   );
 }
 
+function PsychologyTodaySeal() {
+  useEffect(() => {
+    const src = "https://member.psychologytoday.com/verified-seal.js";
+    if (document.querySelector(`script[src="${src}"]`)) return;
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = src;
+    script.setAttribute("data-badge", "11");
+    script.setAttribute("data-id", "1774441");
+    script.setAttribute(
+      "data-code",
+      "aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xMS9wcm9maWxlLzE3NzQ0NDE/Y2FsbGJhY2s9c3hjYWxsYmFjaw==",
+    );
+    document.body.appendChild(script);
+  }, []);
+
+  return (
+    <a
+      href="https://www.psychologytoday.com/profile/1774441"
+      className="sx-verified-seal"
+      aria-label="Verified by Psychology Today"
+    />
+  );
+}
+
 function Footer() {
   return (
     <footer className="bg-topbar text-topbar-foreground">
@@ -246,9 +271,14 @@ function Footer() {
           </p>
         </div>
       </div>
-      <div className="border-t border-white/15 py-5 text-center text-xs opacity-80">
-        © {new Date().getFullYear()} Sparks Psychotherapy Services · Photo credit: Zsuzsi Pál
-        Photography
+      <div className="border-t border-white/15 py-5 text-center">
+        <p className="text-xs opacity-80">
+          © {new Date().getFullYear()} Sparks Psychotherapy Services · Photo credit: Zsuzsi Pál
+          Photography
+        </p>
+        <div className="mt-4 flex justify-center">
+          <PsychologyTodaySeal />
+        </div>
       </div>
     </footer>
   );

@@ -1,5 +1,5 @@
 import { Link, Outlet } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { services } from "@/lib/services-data";
@@ -217,7 +217,11 @@ function Header() {
 }
 
 function PsychologyTodaySeal() {
+  const anchorRef = useRef<HTMLAnchorElement>(null);
+
   useEffect(() => {
+    const anchor = anchorRef.current;
+    if (!anchor) return;
     const src = "https://member.psychologytoday.com/verified-seal.js";
     if (document.querySelector(`script[src="${src}"]`)) return;
     const script = document.createElement("script");
@@ -229,11 +233,15 @@ function PsychologyTodaySeal() {
       "data-code",
       "aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xMS9wcm9maWxlLzE3NzQ0NDE/Y2FsbGJhY2s9c3hjYWxsYmFjaw==",
     );
-    document.body.appendChild(script);
+    // The seal script paints the badge onto the element right before it,
+    // so it must sit directly after the link, exactly as in Psychology
+    // Today's embed code.
+    anchor.insertAdjacentElement("afterend", script);
   }, []);
 
   return (
     <a
+      ref={anchorRef}
       href="https://www.psychologytoday.com/profile/1774441"
       className="sx-verified-seal"
       aria-label="Verified by Psychology Today"
@@ -269,16 +277,14 @@ function Footer() {
             Operating on the traditional and ancestral lands of the Mississaugas of the Credit First
             Nation.
           </p>
+          <div className="mt-4">
+            <PsychologyTodaySeal />
+          </div>
         </div>
       </div>
-      <div className="border-t border-white/15 py-5 text-center">
-        <p className="text-xs opacity-80">
-          © {new Date().getFullYear()} Sparks Psychotherapy Services · Photo credit: Zsuzsi Pál
-          Photography
-        </p>
-        <div className="mt-4 flex justify-center">
-          <PsychologyTodaySeal />
-        </div>
+      <div className="border-t border-white/15 py-5 text-center text-xs opacity-80">
+        © {new Date().getFullYear()} Sparks Psychotherapy Services · Photo credit: Zsuzsi Pál
+        Photography
       </div>
     </footer>
   );

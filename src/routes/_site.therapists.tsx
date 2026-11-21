@@ -10,13 +10,13 @@ export const Route = createFileRoute("/_site/therapists")({
       {
         name: "description",
         content:
-          "Meet Jess Sparks, Registered Psychotherapist at Sparks Psychotherapy, warm, relational, evidence-based therapy for adults, in person and online.",
+          "Meet Jess Sparks, Registered Psychotherapist at Sparks Psychotherapy, warm, relational, evidence-based therapy for adults and teens, in person and online.",
       },
       { property: "og:title", content: "Your Therapist | Sparks Psychotherapy" },
       {
         property: "og:description",
         content:
-          "Meet Jess Sparks, Registered Psychotherapist at Sparks Psychotherapy, warm, relational, evidence-based therapy for adults, in person and online.",
+          "Meet Jess Sparks, Registered Psychotherapist at Sparks Psychotherapy, warm, relational, evidence-based therapy for adults and teens, in person and online.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -35,7 +35,7 @@ function TherapistsPage() {
         <h1 className="text-5xl font-serif">Your Therapist</h1>
         <p className="text-foreground/80">
           Jess Sparks is a Registered Psychotherapist offering warm, grounded, evidence-based care
-          for adults, in person and online.
+          for adults and teens, in person and online.
         </p>
       </section>
 

@@ -223,8 +223,8 @@ function Footer() {
         <div>
           <Logo light />
           <p className="mt-3 text-sm opacity-90 max-w-xs">
-            In-person and virtual psychotherapy for adults seeking deeper connection with themselves
-            and others.
+            In-person and virtual psychotherapy for adults and teens seeking deeper connection with
+            themselves and others.
           </p>
         </div>
         <div className="text-sm space-y-2">

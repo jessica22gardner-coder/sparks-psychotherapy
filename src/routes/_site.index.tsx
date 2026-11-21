@@ -37,7 +37,7 @@ export const Route = createFileRoute("/_site/")({
           "@type": ["LocalBusiness", "ProfessionalService"],
           name: "Sparks Psychotherapy Services",
           description:
-            "Compassionate in-person and online psychotherapy for adults in Oakville, the Greater Toronto Area and Ontario, supporting anxiety, depression, grief, relationships and life transitions.",
+            "Compassionate in-person and online psychotherapy for adults and teens in Oakville, the Greater Toronto Area and Ontario, supporting anxiety, depression, grief, relationships and life transitions.",
           url: "https://sparkspsychotherapy.ca/",
           telephone: "+1-365-977-0155",
           email: "info@sparkspsychotherapy.ca",
@@ -121,7 +121,7 @@ function HomePage() {
         <div className="mx-auto max-w-5xl px-6 text-center space-y-8">
           <h2 className="text-4xl md:text-5xl">Who I Work With</h2>
           <p className="max-w-2xl mx-auto text-foreground/80">
-            I specialize in supporting adults who:
+            I specialize in supporting adults and teens who:
           </p>
           <ul className="grid md:grid-cols-2 gap-4 text-left max-w-3xl mx-auto">
             {[
@@ -184,8 +184,8 @@ function HomePage() {
           <h2 className="text-4xl md:text-5xl">Who This Is For</h2>
           <p className="text-foreground/80">
             It's a great privilege to join you in navigating these challenges together. For adults
-            who grew up feeling emotionally unseen, and are ready to finally understand and care for
-            themselves instead of carrying it alone.
+            and teens who grew up feeling emotionally unseen, and are ready to finally understand
+            and care for themselves instead of carrying it alone.
           </p>
           <p className="font-medium pt-4">Maybe you've spent years:</p>
           <ul className="space-y-3 max-w-xl mx-auto text-foreground/80">
@@ -309,7 +309,8 @@ function HomePage() {
           <h2 className="text-4xl md:text-5xl">In-person in Oakville, online across Ontario</h2>
           <p className="text-foreground/80 max-w-2xl mx-auto">
             I offer in-person therapy sessions at 1155 North Service Road in Oakville, and secure
-            online therapy for adults across the Greater Toronto Area and Ontario, wherever you are.
+            online therapy for adults and teens across the Greater Toronto Area and Ontario,
+            wherever you are.
           </p>
           <ul className="flex flex-wrap justify-center gap-3 pt-2">
             {[

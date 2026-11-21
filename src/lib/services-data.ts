@@ -3,6 +3,7 @@ import type { LucideIcon } from "lucide-react";
 import teenTherapy from "@/assets/teen-therapy.jpg";
 import couplesCounselling from "@/assets/couples-counselling.jpg";
 import emotionalWellness from "@/assets/emotional-wellness.jpg";
+import adoptionCounselling from "@/assets/adoption-counselling.jpg";
 
 export type Service = {
   slug: string;
@@ -148,6 +149,7 @@ export const services: Service[] = [
     long: "Adoption weaves love, loss, identity, and belonging into a lifelong story. Whether you are an adoptee, adoptive parent, or birth parent, sessions honour the complexity of your experience with warmth and care.",
     icon: HandHeart,
     gradient: "from-[oklch(0.92_0.05_40)] to-[oklch(0.94_0.03_140)]",
+    image: adoptionCounselling,
     overview: [
       "Adoption weaves love, loss, identity, and belonging into a lifelong story.",
       "Whether you are an adoptee, an adoptive parent, or a birth parent, your experience deserves a space that honours its full complexity.",

@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { SquareCheck } from "lucide-react";
 import portrait from "@/assets/therapist-portrait.jpg";
 import portrait2 from "@/assets/jess-portrait-2.jpg";
+import whoThisIsFor from "@/assets/who-this-is-for.jpg";
 import bentoIndividual from "@/assets/bento-individual.jpg";
 import bentoCouple from "@/assets/bento-couple.jpg";
 import bentoYoungMan from "@/assets/bento-young-man.jpg";
@@ -180,25 +182,44 @@ function HomePage() {
 
       {/* WHO THIS IS FOR */}
       <section className="bg-secondary/25 py-20 md:py-28">
-        <div className="mx-auto max-w-4xl px-6 text-center space-y-6">
-          <h2 className="text-4xl md:text-5xl">Who This Is For</h2>
-          <p className="text-foreground/80">
-            It's a great privilege to join you in navigating these challenges together. For adults
-            and teens who grew up feeling emotionally unseen, and are ready to finally understand
-            and care for themselves instead of carrying it alone.
-          </p>
-          <p className="font-medium pt-4">Maybe you've spent years:</p>
-          <ul className="space-y-3 max-w-xl mx-auto text-foreground/80">
-            <li>Quieting your true feelings to keep everyone comfortable.</li>
-            <li>Feeling overwhelmed without knowing why.</li>
-            <li>Questioning yourself and struggling to find trust.</li>
-            <li>Searching for a sense of purpose in daily life.</li>
-          </ul>
-          <p className="max-w-2xl mx-auto text-foreground/80 pt-6">
-            I create a warm, non-judgmental space where you are truly seen, heard, and understood.
-            Drawing from relational, developmental, and evidence-based approaches, I support you in
-            exploring emotional patterns, developing new skills, and feeling more grounded.
-          </p>
+        <div className="mx-auto max-w-7xl px-6 md:px-10 grid md:grid-cols-5 gap-12 md:gap-16 lg:gap-24 items-center">
+          <div className="md:col-span-3 space-y-6">
+            <h2 className="text-4xl md:text-5xl">Who This Is For</h2>
+            <p className="text-foreground/80">
+              It&apos;s a great privilege to join you in navigating these challenges together. For
+              adults and teens who grew up feeling emotionally unseen, and are ready to finally
+              understand and care for themselves instead of carrying it alone.
+            </p>
+            <p className="font-medium">Maybe you&apos;ve spent years:</p>
+            <ul className="space-y-3 text-foreground/80">
+              {[
+                "Quieting your true feelings to keep everyone else comfortable.",
+                "Feeling overwhelmed without knowing why.",
+                "Wondering why I question myself and cannot find any trust.",
+                "Seeking a sense of greater purpose or fulfilment in daily life.",
+              ].map((item) => (
+                <li key={item} className="flex gap-3 items-start">
+                  <SquareCheck className="h-6 w-6 shrink-0 text-primary mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-foreground/80">
+              I create a warm, non-judgmental space where you are truly seen, heard, and understood.
+              Drawing from relational, developmental, and evidence-based approaches, I support you
+              in exploring emotional patterns, developing new skills, and feeling more grounded.
+            </p>
+          </div>
+          <div className="md:col-span-2">
+            <img
+              src={whoThisIsFor}
+              alt="A man seated in an armchair during a therapy session"
+              width={800}
+              height={447}
+              loading="lazy"
+              className="rounded-3xl shadow-soft w-full h-auto"
+            />
+          </div>
         </div>
       </section>
 

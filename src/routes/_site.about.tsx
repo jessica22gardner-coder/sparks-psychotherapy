@@ -160,14 +160,30 @@ function AboutPage() {
             </p>
             <h2 className="text-3xl md:text-4xl font-serif">A note from Jess</h2>
           </div>
-          <div className="bg-white border border-border rounded-3xl p-8 md:p-12 shadow-soft -rotate-1 text-left">
-            <p className="font-handwriting text-xl md:text-2xl leading-relaxed text-foreground/85">
-              If you&apos;re ready to understand your emotions more deeply and feel supported
-              through the process, I&apos;d be privileged to work with you.
-            </p>
-            <p className="font-handwriting text-2xl md:text-3xl text-right pt-6 text-heading">
-              Jess
-            </p>
+          <div
+            className="relative mx-auto max-w-lg -rotate-1 text-left"
+            style={{ filter: "drop-shadow(0 12px 16px rgba(0, 0, 0, 0.14))" }}
+          >
+            <div
+              className="absolute bottom-0 right-0 h-10 w-10 bg-[#e9d95f]"
+              style={{ clipPath: "polygon(100% 0, 0 100%, 100% 100%)" }}
+              aria-hidden="true"
+            />
+            <div
+              className="relative bg-[#fef08a] p-8 md:p-12"
+              style={{
+                clipPath:
+                  "polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%)",
+              }}
+            >
+              <p className="font-handwriting text-xl md:text-2xl leading-relaxed text-foreground/85">
+                If you&apos;re ready to understand your emotions more deeply and feel supported
+                through the process, I&apos;d be privileged to work with you.
+              </p>
+              <p className="font-handwriting text-2xl md:text-3xl text-right pt-6 text-heading">
+                Jess
+              </p>
+            </div>
           </div>
           <div className="pt-4">
             <CtaButton to={BOOKING_URL}>Book a Consultation</CtaButton>

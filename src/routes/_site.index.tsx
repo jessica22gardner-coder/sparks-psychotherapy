@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SquareCheck } from "lucide-react";
-import portrait from "@/assets/therapist-portrait.jpg";
-import portrait2 from "@/assets/jess-portrait-2.jpg";
+import portrait from "@/assets/jess-hero.jpg";
+import portrait2 from "@/assets/jess-home-about.jpg";
 import whoThisIsFor from "@/assets/who-this-is-for.jpg";
 import bentoIndividual from "@/assets/bento-individual.jpg";
 import bentoCouple from "@/assets/bento-couple.jpg";
@@ -95,9 +95,9 @@ function HomePage() {
           <div className="rounded-3xl overflow-hidden border-[10px] border-secondary/40 shadow-soft">
             <img
               src={portrait}
-              alt="Jess, registered psychotherapist"
-              width={896}
-              height={1152}
+              alt="Jess, registered psychotherapist, smiling"
+              width={1067}
+              height={1600}
               className="w-full h-auto block"
             />
           </div>
@@ -172,9 +172,9 @@ function HomePage() {
         <div className="md:col-span-2">
           <img
             src={portrait2}
-            alt="Jess, registered psychotherapist, seated and smiling"
-            width={1280}
-            height={1920}
+            alt="Jess, registered psychotherapist, smiling"
+            width={1067}
+            height={1600}
             loading="lazy"
             className="rounded-3xl shadow-soft w-full h-auto"
           />

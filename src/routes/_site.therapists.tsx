@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BOOKING_URL, CtaButton } from "@/components/site-layout";
 import { therapists } from "@/lib/therapists-data";
-import jessPortrait from "@/assets/jess-portrait-2.jpg";
+import jessPortrait from "@/assets/jess-therapists.jpg";
 
 export const Route = createFileRoute("/_site/therapists")({
   head: () => ({
@@ -52,8 +52,8 @@ function TherapistsPage() {
                 <img
                   src={jessPortrait}
                   alt="Jess Sparks, Registered Psychotherapist"
-                  width={427}
-                  height={640}
+                  width={1067}
+                  height={1600}
                   loading="eager"
                   decoding="async"
                   fetchPriority="high"

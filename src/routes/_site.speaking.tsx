@@ -20,6 +20,7 @@ import {
 import { speakingTopics, speakingFormats } from "@/lib/speaking-data";
 import { speakingAudiences } from "@/lib/speaking-audiences";
 import workshop from "@/assets/speaking-hero.jpg";
+import speakerPhoto from "@/assets/jess-speaking.jpg";
 
 const title = "Mental Health Speaking & Workshops | Sparks Psychotherapy";
 const description =
@@ -287,6 +288,14 @@ function SpeakingPage() {
       </section>
       <section className="border-y border-border py-16">
         <div className="mx-auto max-w-3xl px-6 text-center space-y-5">
+          <img
+            src={speakerPhoto}
+            alt="Jess, Registered Psychotherapist and speaker, smiling"
+            width={814}
+            height={1221}
+            loading="lazy"
+            className="mx-auto h-40 w-40 rounded-full object-cover object-[center_25%] shadow-soft"
+          />
           <h2 className="text-3xl md:text-4xl">Creating Impact Through Meaningful Engagements</h2>
           <p className="leading-relaxed">
             Every audience is different. Jess takes a thoughtful and collaborative approach to

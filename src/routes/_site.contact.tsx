@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
+import contactPhoto from "@/assets/jess-contact.jpg";
 
 // TODO: form email delivery to be added later via Hostinger (a server-side
 // handler on the hosting account). When that exists, replace the mailto
@@ -90,6 +91,14 @@ function ContactPage() {
               <p className="text-foreground/85">Virtual across Ontario</p>
             </div>
           </div>
+          <img
+            src={contactPhoto}
+            alt="Jess, Registered Psychotherapist, smiling"
+            width={1067}
+            height={1600}
+            loading="lazy"
+            className="rounded-3xl shadow-soft w-full h-auto"
+          />
         </div>
 
         <form

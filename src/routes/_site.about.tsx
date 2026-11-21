@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import chair from "@/assets/therapist-chair.jpg";
+import aboutPhoto from "@/assets/jess-about.jpg";
 import { BOOKING_URL, CtaButton } from "@/components/site-layout";
 
 export const Route = createFileRoute("/_site/about")({
@@ -38,10 +38,10 @@ function AboutPage() {
           </h1>
         </div>
         <img
-          src={chair}
-          alt="Jess seated in a vintage armchair"
-          width={1280}
-          height={896}
+          src={aboutPhoto}
+          alt="Jess, Registered Psychotherapist, smiling"
+          width={838}
+          height={1258}
           className="rounded-3xl shadow-soft w-full h-auto"
         />
       </section>

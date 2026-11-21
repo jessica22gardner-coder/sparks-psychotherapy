@@ -120,7 +120,7 @@ function AboutPage() {
               </p>
             </div>
           </div>
-          <p className="text-center font-semibold">
+          <p className="mx-auto max-w-2xl text-center italic text-foreground/75">
             I integrate relational and evidence-informed methods such as Emotion-Focused Therapy,
             Cognitive-Behavioural Therapy, and Psychodynamic Principles.
           </p>

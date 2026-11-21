@@ -134,7 +134,7 @@ function HomePage() {
             ].map((item) => (
               <li
                 key={item}
-                className="bg-card rounded-2xl p-6 text-sm md:text-base text-foreground/85 shadow-soft"
+                className="bg-card border border-border rounded-3xl p-7 text-lg text-foreground/85 shadow-soft"
               >
                 {item}
               </li>
@@ -144,7 +144,6 @@ function HomePage() {
             Therapy with me is collaborative, thoughtful, and attuned to your needs. You are in the
             driver's seat, I'm with you, helping to navigate the journey together.
           </p>
-          <CtaButton to="/about">Find Out What Sessions Look Like</CtaButton>
         </div>
       </section>
 
@@ -214,8 +213,8 @@ function HomePage() {
             <img
               src={whoThisIsFor}
               alt="A man seated in an armchair during a therapy session"
-              width={800}
-              height={447}
+              width={614}
+              height={768}
               loading="lazy"
               className="rounded-3xl shadow-soft w-full h-auto"
             />

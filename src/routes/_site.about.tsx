@@ -95,7 +95,7 @@ function AboutPage() {
 
       {/* APPROACH TO THERAPY */}
       <section className="py-20">
-        <div className="mx-auto max-w-3xl px-6 space-y-6 text-foreground/85">
+        <div className="mx-auto max-w-6xl px-6 space-y-6 text-foreground/85">
           <h2 className="text-3xl text-center">Approach to Therapy</h2>
           <div className="space-y-2 text-center">
             <p>My work is grounded in compassion, curiosity, and collaboration.</p>
@@ -103,16 +103,18 @@ function AboutPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
-              <p>Your experiences are met with deep care, great respect, and genuine curiosity.</p>
+              <p className="text-lg">
+                Your experiences are met with deep care, great respect, and genuine curiosity.
+              </p>
             </div>
             <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
-              <p>
+              <p className="text-lg">
                 Minds and hearts aligned toward growth, working collaboratively at a pace that feels
                 supportive and right for you.
               </p>
             </div>
             <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
-              <p>
+              <p className="text-lg">
                 Practical, thoughtful support, tailored to your goals while honoring your values,
                 strengths, and lived experience.
               </p>

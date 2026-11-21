@@ -169,11 +169,8 @@ function AboutPage() {
               Jess
             </p>
           </div>
-          <div className="pt-4 space-y-3">
+          <div className="pt-4">
             <CtaButton to={BOOKING_URL}>Book a Consultation</CtaButton>
-            <p className="text-sm text-foreground/70">
-              Accepting new clients: 1 (365) 977-0155 · info@sparkspsychotherapy.ca
-            </p>
           </div>
         </div>
       </section>

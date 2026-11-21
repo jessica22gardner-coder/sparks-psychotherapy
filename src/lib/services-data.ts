@@ -4,6 +4,7 @@ import teenTherapy from "@/assets/teen-therapy.jpg";
 import couplesCounselling from "@/assets/couples-counselling.jpg";
 import emotionalWellness from "@/assets/emotional-wellness.jpg";
 import adoptionCounselling from "@/assets/adoption-counselling.jpg";
+import familyTherapy from "@/assets/family-therapy.jpg";
 
 export type Service = {
   slug: string;
@@ -172,6 +173,7 @@ export const services: Service[] = [
     long: "Families are living systems. Together we listen for the patterns beneath the friction and support each member in being heard, while building new ways of relating that hold everyone with more care.",
     icon: Users,
     gradient: "from-[oklch(0.92_0.05_165)] to-[oklch(0.94_0.03_60)]",
+    image: familyTherapy,
     overview: [
       "Families are living systems. When one part of the system is hurting, the whole system feels it.",
       "This work listens for the patterns beneath the friction and supports each member in being heard.",

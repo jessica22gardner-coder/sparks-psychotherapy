@@ -71,7 +71,7 @@ function Header() {
   return (
     <header className="bg-background relative z-10">
       <div className="mx-auto max-w-7xl px-6 h-[180px] md:h-[240px] grid grid-cols-2 xl:grid-cols-[1fr_auto_1fr] gap-5 items-center">
-        <nav className="hidden xl:flex items-center gap-6 text-sm tracking-wide -translate-y-4 text-foreground/80">
+        <nav className="hidden xl:flex items-center gap-6 text-base tracking-wide -translate-y-6 text-foreground/80">
           {primaryNav.map((l) => (
             <Link
               key={l.to}
@@ -115,7 +115,7 @@ function Header() {
         <div className="flex justify-start xl:justify-center">
           <Logo variant="header" />
         </div>
-        <div className="hidden xl:flex items-center justify-end gap-6 text-sm -translate-y-4">
+        <div className="hidden xl:flex items-center justify-end gap-6 text-base -translate-y-6">
           <Link
             to="/speaking"
             className="uppercase tracking-wide text-foreground/80 hover:text-primary"
@@ -153,13 +153,13 @@ function Header() {
               key={l.to}
               to={l.to}
               onClick={() => setOpen(false)}
-              className="uppercase text-sm text-foreground/80"
+              className="uppercase text-base text-foreground/80"
             >
               {l.label}
             </Link>
           ))}
           <button
-            className="uppercase text-sm text-foreground/80 flex items-center justify-between"
+            className="uppercase text-base text-foreground/80 flex items-center justify-between"
             onClick={() => setMobileServices((v) => !v)}
           >
             Services <ChevronDown size={14} />
@@ -183,21 +183,21 @@ function Header() {
           <Link
             to="/speaking"
             onClick={() => setOpen(false)}
-            className="uppercase text-sm text-foreground/80"
+            className="uppercase text-base text-foreground/80"
           >
             Speaking & Workshops
           </Link>
           <Link
             to="/blog"
             onClick={() => setOpen(false)}
-            className="uppercase text-sm text-foreground/80"
+            className="uppercase text-base text-foreground/80"
           >
             Blog
           </Link>
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
-            className="uppercase text-sm text-foreground/80"
+            className="uppercase text-base text-foreground/80"
           >
             Contact
           </Link>

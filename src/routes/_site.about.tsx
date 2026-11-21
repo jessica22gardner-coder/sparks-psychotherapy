@@ -151,11 +151,11 @@ function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-serif">A note from Jess</h2>
           </div>
           <div className="bg-white border border-border rounded-3xl p-8 md:p-12 shadow-soft -rotate-1 text-left">
-            <p className="font-handwriting text-2xl md:text-3xl leading-relaxed text-foreground/85">
+            <p className="font-handwriting text-xl md:text-2xl leading-relaxed text-foreground/85">
               If you&apos;re ready to understand your emotions more deeply and feel supported
               through the process, I&apos;d be privileged to work with you.
             </p>
-            <p className="font-handwriting text-3xl md:text-4xl text-right pt-6 text-heading">
+            <p className="font-handwriting text-2xl md:text-3xl text-right pt-6 text-heading">
               Jess
             </p>
           </div>

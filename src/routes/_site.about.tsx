@@ -1,7 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import chair from "@/assets/therapist-chair.jpg";
-import jessPortrait from "@/assets/jess-portrait-2.jpg";
-import { Play } from "lucide-react";
 import { BOOKING_URL, CtaButton } from "@/components/site-layout";
 
 export const Route = createFileRoute("/_site/about")({
@@ -48,18 +46,45 @@ function AboutPage() {
         />
       </section>
 
+      {/* MY STORY */}
       <section className="bg-secondary/25 py-20">
         <div className="mx-auto max-w-3xl px-6 space-y-6 text-foreground/85">
           <h2 className="text-3xl">My Story</h2>
-          <p>
-            My journey into therapy began at sixteen, when I trained as a peer counsellor. That
-            experience planted a seed I still carry today: we all act the way we do for a reason.
+          <p className="text-lg">
+            Hi, I&apos;m Jess, a Registered Psychotherapist who cares deeply about helping you
+            understand your emotions and what to do with them.
           </p>
           <p>
-            Over the years, that early curiosity grew into a career devoted to helping people
-            understand the emotions, behaviours, and stories shaping their lives. As a Registered
-            Psychotherapist, I integrate relational, developmental, and evidence-based approaches,
-            tailored to each person I work with.
+            I am passionate about working with adults, teens and couples who feel emotionally
+            overwhelmed.
+          </p>
+          <p>
+            My journey into therapy began early, when I became a peer counsellor at 16. That
+            experience taught me something I still hold at the core of my work today: we all act the
+            way we do for a reason. It sparked a lifelong curiosity to understand emotions,
+            behaviour, and the stories we carry.
+          </p>
+          <p>
+            I went on to study English and Psychology, because I was drawn to how storytelling can
+            create meaning and deeper emotional understanding. I later spent over 20 years as an
+            educator, supporting learning, growth, and development. During this time, I continuously
+            sought out more knowledge in psychology, human development, teaching, diversity, equity,
+            and inclusion.
+          </p>
+          <p>
+            Alongside my professional work, I navigated personal challenges related to health,
+            relationships, life transitions, and becoming a mother via adoption. I experienced
+            firsthand the value of therapy in building coping skills, emotional clarity, strength,
+            and resilience. These experiences shape how I show up as a therapist, grounded,
+            compassionate, with a deep awareness and understanding on personal and professional
+            levels.
+          </p>
+          <p>
+            I work with adults and teens who feel emotionally overwhelmed, disconnected, or stuck
+            after years of having their feelings go unheard. In our work together, I offer a warm,
+            collaborative space where we can work together toward better understanding your
+            emotions, building self-trust, and exploring what feeling more grounded looks like for
+            you.
           </p>
           <p>
             My hope is that our work together feels grounded, honest, and kind, a place where you
@@ -68,34 +93,81 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* APPROACH TO THERAPY */}
+      <section className="py-20">
+        <div className="mx-auto max-w-3xl px-6 space-y-6 text-foreground/85">
+          <h2 className="text-3xl">Approach to Therapy</h2>
+          <p>
+            Practical, thoughtful support, tailored to your goals while honoring your values,
+            strengths, and lived experience.
+          </p>
+          <p>
+            Minds and hearts aligned toward growth, working collaboratively at a pace that feels
+            supportive and right for you.
+          </p>
+          <p>My work is grounded in compassion, curiosity, and collaboration.</p>
+          <p>
+            In our sessions, you&apos;ll find your experiences are met with deep care, great
+            respect, and genuine curiosity.
+          </p>
+          <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
+            <p>
+              I integrate relational and evidence-informed methods such as Emotion-Focused Therapy,
+              Cognitive-Behavioural Therapy, and Psychodynamic Principles.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* INCLUSIVE & CULTURALLY ATTUNED CARE */}
+      <section className="bg-secondary/25 py-20">
+        <div className="mx-auto max-w-3xl px-6 space-y-6 text-foreground/85">
+          <h2 className="text-3xl">Inclusive &amp; Culturally Attuned Care</h2>
+          <p>
+            I recognize that our emotional lives are shaped by culture, identity, family systems,
+            and lived experience. My practice is committed to providing affirming, culturally
+            responsive care for 2SLGBTQIA+ and BIPOC individuals.
+          </p>
+          <p>
+            Therapy with me is grounded in respect, curiosity, and humility. I understand that
+            safety in therapy is not assumed, it is built through trust, awareness, and
+            accountability.
+          </p>
+          <p>
+            I also acknowledge that this practice operates on the traditional lands of the
+            Mississaugas of the Credit First Nation. I am committed to ongoing learning about
+            Indigenous histories and to practicing in ways that honour this land and its peoples.
+          </p>
+        </div>
+      </section>
+
+      {/* A MESSAGE FROM JESS */}
       <section className="py-20 px-6">
         <div className="mx-auto max-w-3xl text-center space-y-8">
           <div className="space-y-3">
             <p className="text-sm tracking-widest uppercase text-muted-foreground">
               A message from Jess
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif">Hear it in her own words</h2>
+            <h2 className="text-3xl md:text-4xl font-serif">A note from Jess</h2>
           </div>
-          <div className="relative aspect-video rounded-3xl overflow-hidden shadow-soft group">
-            <img
-              src={jessPortrait}
-              alt="Jess, founder of Sparks Psychotherapy"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/25 group-hover:bg-black/35 transition-colors" />
-            <button
-              type="button"
-              aria-label="Play founder video"
-              className="absolute inset-0 flex items-center justify-center"
-            >
-              <span className="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/90 text-primary shadow-soft group-hover:scale-105 transition-transform">
-                <Play className="w-8 h-8 md:w-10 md:h-10 ml-1" fill="currentColor" />
-              </span>
-            </button>
+          <div className="bg-card border border-border rounded-3xl p-8 md:p-12 shadow-soft -rotate-1 text-left">
+            <p className="font-handwriting text-2xl md:text-3xl leading-relaxed text-foreground/85">
+              If you&apos;re looking for therapy that is thoughtful, relational, and emotionally
+              attuned, I&apos;d be glad to connect. If you&apos;re ready to understand your emotions
+              more deeply and feel supported through the process, I&apos;d be privileged to work
+              with you.
+            </p>
+            <p className="font-handwriting text-3xl md:text-4xl text-right pt-6 text-heading">
+              Jess
+            </p>
           </div>
-          <div className="pt-4">
+          <div className="pt-4 space-y-3">
             <CtaButton to={BOOKING_URL}>Book a Consultation</CtaButton>
+            <p className="text-sm text-foreground/70">
+              Accepting new clients: 1 (365) 977-0155 · info@sparkspsychotherapy.ca
+            </p>
           </div>
+          <p className="text-xs text-muted-foreground pt-4">Photo credit: Zsuzsi Pál Photography</p>
         </div>
       </section>
     </>

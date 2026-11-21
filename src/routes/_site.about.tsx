@@ -129,21 +129,21 @@ function AboutPage() {
 
       {/* INCLUSIVE & CULTURALLY ATTUNED CARE */}
       <section className="bg-topbar py-20">
-        <div className="mx-auto max-w-3xl px-6 space-y-6 text-center text-topbar-foreground">
+        <div className="mx-auto max-w-6xl px-6 space-y-6 text-center text-topbar-foreground">
           <h2 className="text-3xl text-topbar-foreground">
             Inclusive &amp; Culturally Attuned Care
           </h2>
-          <p>
+          <p className="text-lg">
             I recognize that our emotional lives are shaped by culture, identity, family systems,
             and lived experience. My practice is committed to providing affirming, culturally
             responsive care for 2SLGBTQIA+ and BIPOC individuals.
           </p>
-          <p>
+          <p className="text-lg">
             Therapy with me is grounded in respect, curiosity, and humility. I understand that
             safety in therapy is not assumed, it is built through trust, awareness, and
             accountability.
           </p>
-          <p>
+          <p className="text-lg">
             I also acknowledge that this practice operates on the traditional lands of the
             Mississaugas of the Credit First Nation. I am committed to ongoing learning about
             Indigenous histories and to practicing in ways that honour this land and its peoples.

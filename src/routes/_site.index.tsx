@@ -149,23 +149,25 @@ function HomePage() {
 
       {/* ABOUT JESS */}
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-5 gap-12 md:gap-16 lg:gap-24 items-center">
-        <div className="md:col-span-3 space-y-6">
-          <h2 className="text-3xl md:text-4xl">
-            Hi, I'm Jess, a Registered Psychotherapist who cares deeply about helping you understand
-            your emotions and what to do with them.
-          </h2>
-          <p className="text-foreground/80">
-            My journey into therapy began early, when I became a peer counsellor at sixteen. That
-            experience taught me something I still hold at the core of my work today, we all act the
-            way we do for a reason. It sparked a lifelong curiosity to understand emotions,
-            behaviour, and the stories we carry.
-          </p>
-          <Link
-            to="/about"
-            className="inline-block uppercase tracking-widest text-xs text-primary border-b border-primary pb-1 hover:opacity-80"
-          >
-            My Story
-          </Link>
+        <div className="md:col-span-3">
+          <div className="relative z-10 bg-card border border-border rounded-[2.5rem] p-8 md:p-10 shadow-soft space-y-6 md:-mr-24 lg:-mr-28">
+            <h2 className="text-3xl md:text-4xl">
+              Hi, I&apos;m Jess, a Registered Psychotherapist who cares deeply about helping you
+              understand your emotions and what to do with them.
+            </h2>
+            <p className="text-foreground/80">
+              My journey into therapy began early, when I became a peer counsellor at sixteen. That
+              experience taught me something I still hold at the core of my work today, we all act
+              the way we do for a reason. It sparked a lifelong curiosity to understand emotions,
+              behaviour, and the stories we carry.
+            </p>
+            <Link
+              to="/about"
+              className="inline-block uppercase tracking-widest text-xs text-primary border-b border-primary pb-1 hover:opacity-80"
+            >
+              My Story
+            </Link>
+          </div>
         </div>
         <div className="md:col-span-2">
           <img

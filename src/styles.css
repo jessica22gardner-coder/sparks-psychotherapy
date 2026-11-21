@@ -76,7 +76,7 @@
   --shadow-soft: 0 20px 60px -20px oklch(0.6 0.04 200 / 0.25);
   --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;
-  --font-handwriting: "Caveat", cursive;
+  --font-handwriting: "Kalam", cursive;
 }
 
 @layer base {

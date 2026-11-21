@@ -2,6 +2,7 @@ import { Brain, CloudRain, Sparkles, Heart, UserRound, HandHeart, Users } from "
 import type { LucideIcon } from "lucide-react";
 import teenTherapy from "@/assets/teen-therapy.jpg";
 import couplesCounselling from "@/assets/couples-counselling.jpg";
+import emotionalWellness from "@/assets/emotional-wellness.jpg";
 
 export type Service = {
   slug: string;
@@ -78,6 +79,7 @@ export const services: Service[] = [
     long: "Emotional wellness is not the absence of hard feelings, it is your relationship with them. We build the vocabulary, tools, and inner steadiness to work with every emotion as information rather than an emergency.",
     icon: Sparkles,
     gradient: "from-[oklch(0.92_0.05_95)] to-[oklch(0.94_0.03_165)]",
+    image: emotionalWellness,
     overview: [
       "Emotional wellness is not the absence of hard feelings, it is the quality of your relationship with them.",
       "When we learn to meet our inner world with curiosity instead of judgment, emotions become information rather than emergencies.",

@@ -330,11 +330,9 @@ function HomePage() {
           </p>
           <h2 className="text-4xl md:text-5xl">In-person in Oakville, online across Ontario</h2>
           <p className="text-foreground/80 max-w-2xl mx-auto">
-            I offer in-person therapy sessions at 1155 North Service Road in Oakville, and secure
-            online therapy for adults and teens across the Greater Toronto Area and Ontario,
-            wherever you are.
+            I offer in-person therapy sessions at 1155 North Service Road in Oakville.
           </p>
-          <ul className="flex flex-wrap justify-center gap-3 pt-2">
+          <ul className="sr-only">
             {[
               "Oakville",
               "Burlington",
@@ -344,12 +342,7 @@ function HomePage() {
               "Hamilton",
               "London",
             ].map((city) => (
-              <li
-                key={city}
-                className="bg-card border border-border rounded-full px-5 py-2 text-sm text-foreground/85 shadow-soft"
-              >
-                {city}
-              </li>
+              <li key={city}>{city}</li>
             ))}
           </ul>
           <p className="text-foreground/75">Online sessions are available anywhere in Ontario.</p>

@@ -216,27 +216,45 @@ function Header() {
   );
 }
 
+type PsychologyTodaySealData = {
+  name: string;
+  badgeId: number;
+  image: {
+    content: string;
+    dimensions?: { width: string | number; height: string | number };
+  };
+};
+
 function PsychologyTodaySeal() {
   const anchorRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     const anchor = anchorRef.current;
-    if (!anchor) return;
-    const src = "https://member.psychologytoday.com/verified-seal.js";
-    if (document.querySelector(`script[src="${src}"]`)) return;
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = src;
-    script.setAttribute("data-badge", "11");
-    script.setAttribute("data-id", "1774441");
-    script.setAttribute(
-      "data-code",
+    if (!anchor || anchor.dataset.sealLoaded) return;
+    anchor.dataset.sealLoaded = "true";
+
+    // Psychology Today's loader only runs on DOMContentLoaded, which has
+    // already fired by the time this app mounts, so it never fetches the
+    // badge. Do the same fetch it does, directly: ask their API for the
+    // badge and paint it onto the link.
+    (window as unknown as { sxcallback: (data: PsychologyTodaySealData) => void }).sxcallback = (
+      data,
+    ) => {
+      anchor.setAttribute("target", "_top");
+      anchor.style.display = "block";
+      anchor.style.backgroundRepeat = "no-repeat";
+      anchor.style.backgroundImage = `url("data:image/svg+xml;base64,${data.image.content}")`;
+      anchor.style.width = `${parseInt(String(data.image.dimensions?.width ?? 186))}px`;
+      anchor.style.height = `${parseInt(String(data.image.dimensions?.height ?? 60))}px`;
+      anchor.title = data.name;
+    };
+
+    const apiUrl = atob(
       "aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xMS9wcm9maWxlLzE3NzQ0NDE/Y2FsbGJhY2s9c3hjYWxsYmFjaw==",
     );
-    // The seal script paints the badge onto the element right before it,
-    // so it must sit directly after the link, exactly as in Psychology
-    // Today's embed code.
-    anchor.insertAdjacentElement("afterend", script);
+    const script = document.createElement("script");
+    script.src = apiUrl;
+    document.body.appendChild(script);
   }, []);
 
   return (

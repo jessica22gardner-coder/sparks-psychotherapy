@@ -128,9 +128,11 @@ function AboutPage() {
       </section>
 
       {/* INCLUSIVE & CULTURALLY ATTUNED CARE */}
-      <section className="bg-secondary/25 py-20">
-        <div className="mx-auto max-w-3xl px-6 space-y-6 text-foreground/85">
-          <h2 className="text-3xl">Inclusive &amp; Culturally Attuned Care</h2>
+      <section className="bg-topbar py-20">
+        <div className="mx-auto max-w-3xl px-6 space-y-6 text-center text-topbar-foreground">
+          <h2 className="text-3xl text-topbar-foreground">
+            Inclusive &amp; Culturally Attuned Care
+          </h2>
           <p>
             I recognize that our emotional lives are shaped by culture, identity, family systems,
             and lived experience. My practice is committed to providing affirming, culturally

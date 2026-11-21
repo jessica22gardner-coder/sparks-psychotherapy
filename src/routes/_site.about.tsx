@@ -14,12 +14,12 @@ export const Route = createFileRoute("/_site/about")({
       {
         property: "og:description",
         content:
-          "Meet Jess, a Registered Psychotherapist offering compassionate, relational therapy for adults.",
+          "Meet Jess, a Registered Psychotherapist offering compassionate, relational therapy for adults and teens.",
       },
       {
         name: "description",
         content:
-          "Meet Jess, a Registered Psychotherapist offering compassionate, relational therapy for adults.",
+          "Meet Jess, a Registered Psychotherapist offering compassionate, relational therapy for adults and teens.",
       },
     ],
   }),

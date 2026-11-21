@@ -196,7 +196,7 @@ function HomePage() {
               {[
                 "Quieting your true feelings to keep everyone else comfortable.",
                 "Feeling overwhelmed without knowing why.",
-                "Wondering why I question myself and cannot find any trust.",
+                "Wondering why you question yourself and cannot find any trust.",
                 "Seeking a sense of greater purpose or fulfilment in daily life.",
               ].map((item) => (
                 <li key={item} className="flex gap-3 items-start">

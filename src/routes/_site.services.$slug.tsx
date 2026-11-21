@@ -46,7 +46,7 @@ export const Route = createFileRoute("/_site/services/$slug")({
   },
   component: ServiceDetail,
   notFoundComponent: () => (
-    <div className="mx-auto max-w-2xl px-6 py-24 text-center space-y-4">
+    <div className="mx-auto max-w-2xl px-6 py-16 text-center space-y-4">
       <h1 className="text-4xl font-serif">Service not found</h1>
       <p className="text-foreground/80">The service you're looking for doesn't exist yet.</p>
       <CtaButton to="/">Back to Home</CtaButton>
@@ -62,7 +62,7 @@ function ServiceDetail() {
 
   return (
     <>
-      <section className="mx-auto max-w-7xl px-6 md:px-10 py-16 md:py-24 grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
+      <section className="mx-auto max-w-7xl px-6 md:px-10 py-10 md:py-16 grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
         <div
           className={`aspect-square overflow-hidden rounded-3xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-soft`}
         >

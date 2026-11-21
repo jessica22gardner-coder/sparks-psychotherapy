@@ -70,7 +70,7 @@ function Header() {
   const [mobileServices, setMobileServices] = useState(false);
   return (
     <header className="bg-background relative z-10">
-      <div className="mx-auto max-w-7xl px-6 h-[180px] md:h-[240px] grid grid-cols-2 xl:grid-cols-[1fr_auto_1fr] gap-5 items-center">
+      <div className="mx-auto max-w-7xl px-6 h-[160px] md:h-[200px] grid grid-cols-2 xl:grid-cols-[1fr_auto_1fr] gap-5 items-center">
         <nav className="hidden xl:flex items-center gap-6 text-base tracking-wide -translate-y-6 text-foreground/80">
           {primaryNav.map((l) => (
             <Link

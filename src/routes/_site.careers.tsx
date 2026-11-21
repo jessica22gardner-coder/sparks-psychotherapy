@@ -26,7 +26,7 @@ export const Route = createFileRoute("/_site/careers")({
 function CareersPage() {
   return (
     <>
-      <section className="mx-auto max-w-3xl px-6 py-16 md:py-24 text-center space-y-4">
+      <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
         <p className="text-sm tracking-widest uppercase text-muted-foreground">Join our team</p>
         <h1 className="text-5xl font-serif">Careers at Sparks</h1>
         <p className="text-foreground/80">

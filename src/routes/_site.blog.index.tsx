@@ -26,7 +26,7 @@ export const Route = createFileRoute("/_site/blog/")({
 function BlogPage() {
   return (
     <>
-      <section className="mx-auto max-w-3xl px-6 py-16 md:py-24 text-center space-y-4">
+      <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
         <h1 className="text-5xl md:text-6xl font-serif">From the Journal</h1>
         <p className="text-lg text-foreground/80">
           Reflections on emotions, relationships, and the slow work of feeling more like yourself.

@@ -28,7 +28,7 @@ export const Route = createFileRoute("/_site/therapists")({
 function TherapistsPage() {
   return (
     <>
-      <section className="mx-auto max-w-3xl px-6 py-16 md:py-24 text-center space-y-4">
+      <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
         <p className="text-sm tracking-widest uppercase text-muted-foreground">
           Meet your therapist
         </p>

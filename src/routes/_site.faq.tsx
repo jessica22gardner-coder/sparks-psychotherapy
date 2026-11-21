@@ -69,7 +69,7 @@ const faqs = [
 function FaqPage() {
   return (
     <>
-      <section className="mx-auto max-w-3xl px-6 py-16 md:py-24 text-center space-y-4">
+      <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
         <h1 className="text-5xl font-serif">Frequently Asked</h1>
         <p className="text-foreground/80">
           Answers to a few of the most common questions. If yours isn't here, please reach out.

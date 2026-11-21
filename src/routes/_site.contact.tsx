@@ -53,7 +53,7 @@ function ContactPage() {
 
   return (
     <>
-      <section className="mx-auto max-w-3xl px-6 py-16 md:py-24 text-center space-y-4">
+      <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
         <h1 className="text-5xl font-serif">Let's connect</h1>
         <p className="text-foreground/80">
           Schedule your free 15-minute connection call, or email me and I&apos;ll be in touch within

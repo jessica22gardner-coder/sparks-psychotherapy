@@ -90,7 +90,7 @@ function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="mx-auto max-w-7xl px-6 md:px-10 py-16 md:py-24 grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
+      <section className="mx-auto max-w-7xl px-6 md:px-10 py-10 md:py-16 grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
         <div className="order-2 md:order-1">
           <div className="rounded-3xl overflow-hidden border-[10px] border-secondary/40 shadow-soft">
             <img

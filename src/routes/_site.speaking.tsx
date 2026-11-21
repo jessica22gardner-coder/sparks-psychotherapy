@@ -108,7 +108,7 @@ function SpeakingPage() {
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 speaking-hero-overlay" />
-        <div className="relative mx-auto max-w-7xl px-6 py-16 lg:py-20">
+        <div className="relative mx-auto max-w-7xl px-6 py-10 lg:py-12">
           <div className="max-w-2xl space-y-6">
             <p className="uppercase tracking-widest text-xs font-medium text-heading flex items-center gap-2">
               <Mic2 size={16} /> Speaking & Workshops with Jess

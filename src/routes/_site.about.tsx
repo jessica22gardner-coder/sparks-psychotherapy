@@ -27,7 +27,7 @@ export const Route = createFileRoute("/_site/about")({
 function AboutPage() {
   return (
     <>
-      <section className="mx-auto max-w-7xl px-6 md:px-10 py-16 md:py-24 grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
+      <section className="mx-auto max-w-7xl px-6 md:px-10 py-10 md:py-16 grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
         <div className="space-y-6">
           <p className="text-sm tracking-widest uppercase text-muted-foreground">
             The foundation of my work is this…

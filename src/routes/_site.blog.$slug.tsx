@@ -65,7 +65,7 @@ function BlogPostPage() {
 
   return (
     <>
-      <article className="mx-auto max-w-3xl px-6 pt-16 md:pt-24 pb-16">
+      <article className="mx-auto max-w-3xl px-6 pt-10 md:pt-16 pb-16">
         <Link to="/blog" className="uppercase tracking-widest text-xs text-primary">
           ← Back to Journal
         </Link>
@@ -134,7 +134,7 @@ function BlogPostPage() {
 
 function BlogNotFound() {
   return (
-    <section className="mx-auto max-w-2xl px-6 py-24 text-center space-y-6">
+    <section className="mx-auto max-w-2xl px-6 py-16 text-center space-y-6">
       <h1 className="text-4xl font-serif">Post not found</h1>
       <p className="text-foreground/75">
         The article you're looking for isn't here. Head back to the journal to browse the latest

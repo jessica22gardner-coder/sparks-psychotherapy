@@ -24,7 +24,7 @@ const footerNav = [
 
 function TopBar() {
   return (
-    <div className="bg-topbar text-topbar-foreground text-sm">
+    <div className="bg-topbar text-topbar-foreground text-base">
       <div className="mx-auto max-w-7xl px-4 py-2.5 text-center">
         <span className="font-medium">Accepting new clients:</span>{" "}
         <a href="tel:13659770155" className="hover:underline">
@@ -71,7 +71,7 @@ function Header() {
   return (
     <header className="bg-background relative z-10">
       <div className="mx-auto max-w-7xl px-6 h-[160px] md:h-[200px] grid grid-cols-2 xl:grid-cols-[1fr_auto_1fr] gap-5 items-center">
-        <nav className="hidden xl:flex items-center gap-6 text-base tracking-wide -translate-y-6 text-foreground/80">
+        <nav className="hidden xl:flex items-center gap-6 text-base tracking-wide -translate-y-8 text-foreground/80">
           {primaryNav.map((l) => (
             <Link
               key={l.to}
@@ -115,7 +115,7 @@ function Header() {
         <div className="flex justify-start xl:justify-center">
           <Logo variant="header" />
         </div>
-        <div className="hidden xl:flex items-center justify-end gap-6 text-base -translate-y-6">
+        <div className="hidden xl:flex items-center justify-end gap-6 text-base -translate-y-8">
           <Link
             to="/speaking"
             className="uppercase tracking-wide text-foreground/80 hover:text-primary"
@@ -321,7 +321,7 @@ export function SiteLayout() {
         href={BOOKING_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="hidden md:inline-flex fixed top-4 right-4 z-50 bg-sand text-sand-foreground rounded-full px-6 py-3 uppercase tracking-wider text-xs font-medium hover:opacity-90 transition shadow-soft"
+        className="hidden md:inline-flex fixed top-4 right-4 z-50 bg-sand text-sand-foreground rounded-full px-6 py-3 uppercase tracking-wider text-sm font-medium hover:opacity-90 transition shadow-soft"
       >
         Book an Appointment
       </a>

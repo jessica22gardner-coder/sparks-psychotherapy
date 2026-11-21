@@ -97,19 +97,25 @@ function AboutPage() {
       <section className="py-20">
         <div className="mx-auto max-w-3xl px-6 space-y-6 text-foreground/85">
           <h2 className="text-3xl">Approach to Therapy</h2>
-          <p>
-            Practical, thoughtful support, tailored to your goals while honoring your values,
-            strengths, and lived experience.
-          </p>
-          <p>
-            Minds and hearts aligned toward growth, working collaboratively at a pace that feels
-            supportive and right for you.
-          </p>
           <p>My work is grounded in compassion, curiosity, and collaboration.</p>
-          <p>
-            In our sessions, you&apos;ll find your experiences are met with deep care, great
-            respect, and genuine curiosity.
-          </p>
+          <p>In our sessions, you&apos;ll find:</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
+              <p>Your experiences are met with deep care, great respect, and genuine curiosity.</p>
+            </div>
+            <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
+              <p>
+                Minds and hearts aligned toward growth, working collaboratively at a pace that feels
+                supportive and right for you.
+              </p>
+            </div>
+            <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
+              <p>
+                Practical, thoughtful support, tailored to your goals while honoring your values,
+                strengths, and lived experience.
+              </p>
+            </div>
+          </div>
           <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
             <p>
               I integrate relational and evidence-informed methods such as Emotion-Focused Therapy,

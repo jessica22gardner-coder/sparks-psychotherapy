@@ -218,7 +218,7 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="bg-topbar text-topbar-foreground mt-24">
+    <footer className="bg-topbar text-topbar-foreground">
       <div className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-3 gap-10">
         <div>
           <Logo light />

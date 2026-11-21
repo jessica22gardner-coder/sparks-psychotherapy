@@ -120,12 +120,12 @@ function HomePage() {
 
       {/* WHO I WORK WITH */}
       <section className="bg-secondary/25 py-20 md:py-28">
-        <div className="mx-auto max-w-5xl px-6 text-center space-y-8">
+        <div className="mx-auto max-w-6xl px-6 text-center space-y-8">
           <h2 className="text-4xl md:text-5xl">Who I Work With</h2>
           <p className="max-w-2xl mx-auto text-foreground/80">
             I specialize in supporting adults and teens who:
           </p>
-          <ul className="grid md:grid-cols-2 gap-4 text-left max-w-3xl mx-auto">
+          <ul className="grid md:grid-cols-2 gap-8 text-left">
             {[
               "Grew up in environments where emotions were minimized or dismissed",
               "Feel emotionally disconnected or overwhelmed by depression, anxiety, grief, or life transitions",
@@ -134,7 +134,7 @@ function HomePage() {
             ].map((item) => (
               <li
                 key={item}
-                className="bg-card border border-border rounded-3xl p-7 text-lg text-foreground/85 shadow-soft"
+                className="bg-card border border-border rounded-3xl p-10 text-lg text-foreground/85 shadow-soft"
               >
                 {item}
               </li>

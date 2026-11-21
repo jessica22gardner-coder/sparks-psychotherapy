@@ -84,10 +84,10 @@ function FaqPage() {
               value={`item-${i}`}
               className="bg-card border border-border rounded-2xl px-6"
             >
-              <AccordionTrigger className="text-left text-lg font-serif text-heading">
+              <AccordionTrigger className="text-left text-xl font-serif text-heading">
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="text-foreground/80">{f.a}</AccordionContent>
+              <AccordionContent className="text-lg text-foreground/80">{f.a}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

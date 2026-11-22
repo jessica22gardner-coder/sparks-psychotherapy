@@ -297,7 +297,7 @@ function HomePage() {
               width={1000}
               height={388}
               loading="lazy"
-              className="w-full h-full object-cover object-[center_25%]"
+              className="w-full h-full object-cover object-[center_60%]"
             />
           </div>
         </div>

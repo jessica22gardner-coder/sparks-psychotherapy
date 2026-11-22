@@ -5,8 +5,9 @@
 // practice inbox through Hushmail over an encrypted SMTP connection.
 //
 // The Hushmail login is NOT in this file. It lives in mail-config.php,
-// a file that sits above the website folder on the server (outside
-// public_html, where no visitor can ever open it) and looks like this:
+// a file at /home/u684053096/mail-config.php on the server — three
+// levels above public_html, outside the website folder, where no
+// visitor can ever open it — and looks like this:
 //
 //   <?php
 //   return [
@@ -69,7 +70,7 @@ if (function_exists('mb_encode_mimeheader')) {
     $subject = mb_encode_mimeheader($subject, 'UTF-8', 'Q');
 }
 
-$configPath = __DIR__ . '/../../mail-config.php';
+$configPath = __DIR__ . '/../../../mail-config.php';
 if (!is_file($configPath)) {
     error_log('contact form: mail-config.php is missing');
     fail(500, 'The message could not be sent right now. Please email info@sparkspsychotherapy.ca directly.');

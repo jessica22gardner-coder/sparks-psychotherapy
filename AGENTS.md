@@ -48,8 +48,11 @@
   info@sparkspsychotherapy.ca through Hushmail over encrypted SMTP
   (smtp.hushmail.com, port 465, SSL), with the visitor's address as
   Reply-To. It reads the Hushmail login from `mail-config.php`, a file
-  that lives one level above the website root on the server (outside
-  public_html) and is created by hand there. The password-free
+  that lives at /home/u684053096/mail-config.php on the server — three
+  levels above public_html, outside the website folder — and is created
+  by hand there. (Two levels up would land in the domains folder, not
+  the home folder — that exact mistake broke the form on 2026-11-22
+  until the path was fixed.) The password-free
   mail() version was tried and REJECTED (test message went to spam,
   2026-11-22) — the mail() version stays in git history only. Never put
   email passwords, SMTP credentials or API keys in this repo — they must

@@ -27,7 +27,7 @@ function CareersPage() {
   return (
     <>
       <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
-        <p className="text-sm tracking-widest uppercase text-muted-foreground">Join our team</p>
+        <p className="text-lg tracking-widest uppercase text-muted-foreground">Join our team</p>
         <h1 className="text-5xl font-serif">Careers at Sparks</h1>
         <p className="text-foreground/80">
           We're building a small, values-led practice where clinicians can do their best work,

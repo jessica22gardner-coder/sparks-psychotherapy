@@ -66,7 +66,7 @@ function ContactPage() {
           <div className="flex items-start gap-3">
             <Phone className="text-primary mt-1" size={20} />
             <div>
-              <p className="text-sm text-muted-foreground uppercase tracking-wider">Phone</p>
+              <p className="text-lg text-muted-foreground uppercase tracking-wider">Phone</p>
               <a href="tel:13659770155" className="text-foreground/85">
                 1 (365) 977-0155
               </a>
@@ -75,7 +75,7 @@ function ContactPage() {
           <div className="flex items-start gap-3">
             <Mail className="text-primary mt-1" size={20} />
             <div>
-              <p className="text-sm text-muted-foreground uppercase tracking-wider">Email</p>
+              <p className="text-lg text-muted-foreground uppercase tracking-wider">Email</p>
               <a href={`mailto:${CONTACT_EMAIL}`} className="text-foreground/85">
                 {CONTACT_EMAIL}
               </a>
@@ -84,7 +84,7 @@ function ContactPage() {
           <div className="flex items-start gap-3">
             <MapPin className="text-primary mt-1" size={20} />
             <div>
-              <p className="text-sm text-muted-foreground uppercase tracking-wider">Sessions</p>
+              <p className="text-lg text-muted-foreground uppercase tracking-wider">Sessions</p>
               <p className="text-foreground/85">
                 In-person at 1155 North Service Road, Oakville, ON L6M 3E3
               </p>

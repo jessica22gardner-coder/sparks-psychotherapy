@@ -29,7 +29,7 @@ function AboutPage() {
     <>
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-10 md:py-16 grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
         <div className="space-y-6">
-          <p className="text-sm tracking-widest uppercase text-muted-foreground">
+          <p className="text-lg tracking-widest uppercase text-muted-foreground">
             The foundation of my work is this…
           </p>
           <h1 className="text-4xl md:text-5xl font-serif">
@@ -155,7 +155,7 @@ function AboutPage() {
       <section className="py-20 px-6">
         <div className="mx-auto max-w-3xl text-center space-y-8">
           <div className="space-y-3">
-            <p className="text-sm tracking-widest uppercase text-muted-foreground">
+            <p className="text-lg tracking-widest uppercase text-muted-foreground">
               A message from Jess
             </p>
             <h2 className="text-3xl md:text-4xl font-serif">A note from Jess</h2>

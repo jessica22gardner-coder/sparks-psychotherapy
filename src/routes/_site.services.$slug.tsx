@@ -73,7 +73,7 @@ function ServiceDetail() {
           )}
         </div>
         <div className="space-y-5">
-          <p className="text-sm tracking-widest uppercase text-muted-foreground">Area of Care</p>
+          <p className="text-lg tracking-widest uppercase text-muted-foreground">Area of Care</p>
           <h1 className="text-4xl md:text-5xl font-serif">{service.title}</h1>
           <p className="text-2xl leading-relaxed text-foreground/80">{service.short}</p>
           <div className="flex flex-wrap gap-3 pt-2">
@@ -85,7 +85,7 @@ function ServiceDetail() {
       {/* Understanding */}
       <section className="bg-secondary/25 py-20">
         <div className="mx-auto max-w-3xl px-6 space-y-6">
-          <p className="text-sm tracking-widest uppercase text-muted-foreground">
+          <p className="text-lg tracking-widest uppercase text-muted-foreground">
             Understanding {service.title}
           </p>
           <h2 className="text-3xl md:text-4xl">You are not alone in this.</h2>
@@ -100,7 +100,7 @@ function ServiceDetail() {
       {/* Signs */}
       <section className="mx-auto max-w-5xl px-6 py-20 md:py-24">
         <div className="text-center space-y-4 mb-12">
-          <p className="text-sm tracking-widest uppercase text-muted-foreground">
+          <p className="text-lg tracking-widest uppercase text-muted-foreground">
             What it can look like
           </p>
           <h2 className="text-3xl md:text-4xl">Signs and experiences</h2>
@@ -126,7 +126,7 @@ function ServiceDetail() {
       <section className="bg-secondary/25 py-20 md:py-24">
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center space-y-4 mb-12">
-            <p className="text-sm tracking-widest uppercase text-muted-foreground">
+            <p className="text-lg tracking-widest uppercase text-muted-foreground">
               How therapy can help
             </p>
             <h2 className="text-3xl md:text-4xl">A path forward, together</h2>

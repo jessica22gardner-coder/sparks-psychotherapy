@@ -29,7 +29,7 @@ function TherapistsPage() {
   return (
     <>
       <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
-        <p className="text-sm tracking-widest uppercase text-muted-foreground">
+        <p className="text-lg tracking-widest uppercase text-muted-foreground">
           Meet your therapist
         </p>
         <h1 className="text-5xl font-serif">Your Therapist</h1>

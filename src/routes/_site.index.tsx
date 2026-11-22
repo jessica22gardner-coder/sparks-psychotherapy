@@ -103,7 +103,7 @@ function HomePage() {
           </div>
         </div>
         <div className="order-1 md:order-2 space-y-6">
-          <p className="text-sm tracking-widest uppercase text-muted-foreground">
+          <p className="text-lg tracking-widest uppercase text-muted-foreground">
             In-person and virtual therapy
           </p>
           <h1 className="text-5xl md:text-6xl font-serif">
@@ -227,7 +227,7 @@ function HomePage() {
       {/* WHAT I OFFER */}
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="text-center space-y-4 mb-14">
-          <p className="text-sm tracking-widest uppercase text-muted-foreground">How I Work</p>
+          <p className="text-lg tracking-widest uppercase text-muted-foreground">How I Work</p>
           <h2 className="text-4xl md:text-5xl">Therapy Options</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -325,7 +325,7 @@ function HomePage() {
       {/* WHERE I PRACTICE */}
       <section className="bg-secondary/25 py-20 md:py-28">
         <div className="mx-auto max-w-4xl px-6 text-center space-y-6">
-          <p className="text-sm tracking-widest uppercase text-muted-foreground">
+          <p className="text-lg tracking-widest uppercase text-muted-foreground">
             Where I Practice
           </p>
           <h2 className="text-4xl md:text-5xl">In-person in Oakville, online across Ontario</h2>

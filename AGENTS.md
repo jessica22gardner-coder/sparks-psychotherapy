@@ -40,12 +40,18 @@
 
 ## Contact form
 
-- The contact form has no backend. It opens the visitor's email app with a
-  message to info@sparkspsychotherapy.ca (see
-  `src/routes/_site.contact.tsx`) and says so on the page.
-- TODO: form email delivery to be added later via Hostinger (a server-side
-  handler on the hosting account). Never put email passwords, SMTP
-  credentials or API keys in this repo — they must live server-side only.
+- The contact form POSTs JSON to `/contact.php` (see
+  `src/routes/_site.contact.tsx`) and shows success or failure from its
+  real response, with an email/call fallback when sending fails.
+- `public/contact.php` is the server-side handler (copied to `dist/` by the
+  build). It validates the message and sends it to
+  info@sparkspsychotherapy.ca through Hushmail over encrypted SMTP
+  (smtp.hushmail.com, port 465, SSL), with the visitor's address as
+  Reply-To. It reads the Hushmail login from `mail-config.php`, a file
+  that lives one level above the website root on the server (outside
+  public_html) and is created by hand there. Never put email passwords,
+  SMTP credentials or API keys in this repo — they must live server-side
+  only, in that file and nowhere else.
 
 ## Secrets
 

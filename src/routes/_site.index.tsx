@@ -250,14 +250,14 @@ function HomePage() {
 
         {/* BENTO GALLERY — the journey: roots, joy returns, quiet togetherness, young voices, growing */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[240px]">
-          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft bg-secondary/50">
+          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft">
             <img
               src={bentoGarden}
               alt="An older man smiling with two young girls in a sunny garden"
               width={1000}
               height={500}
               loading="lazy"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="rounded-3xl overflow-hidden shadow-soft bg-secondary/50">
@@ -280,14 +280,14 @@ function HomePage() {
               className="w-full h-full object-cover object-[center_25%]"
             />
           </div>
-          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft bg-secondary/50">
+          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft">
             <img
               src={bentoTeens}
               alt="Three teenagers smiling outdoors, one holding a microphone"
               width={1000}
               height={500}
               loading="lazy"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover object-top"
             />
           </div>
           <div className="md:col-span-3 rounded-3xl overflow-hidden shadow-soft">

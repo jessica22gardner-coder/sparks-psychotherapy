@@ -280,14 +280,14 @@ function HomePage() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft">
+          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft bg-secondary/50">
             <img
               src={bentoTeens}
               alt="Three teenagers smiling outdoors, one holding a microphone"
               width={1000}
               height={500}
               loading="lazy"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-contain"
             />
           </div>
           <div className="md:col-span-3 rounded-3xl overflow-hidden shadow-soft">
@@ -297,7 +297,7 @@ function HomePage() {
               width={1000}
               height={388}
               loading="lazy"
-              className="w-full h-full object-cover object-[center_60%]"
+              className="w-full h-full object-cover object-[center_55%]"
             />
           </div>
         </div>

@@ -330,7 +330,7 @@ function HomePage() {
           </p>
           <h2 className="text-5xl md:text-6xl">In-person in Oakville, online across Ontario</h2>
           <p className="text-foreground/80 max-w-2xl mx-auto">
-            I offer in-person therapy sessions at 1155 North Service Road in Oakville.
+            I offer in-person therapy sessions in Oakville.
           </p>
           <ul className="sr-only">
             {[
@@ -345,7 +345,10 @@ function HomePage() {
               <li key={city}>{city}</li>
             ))}
           </ul>
-          <p className="text-foreground/75">Online sessions are available anywhere in Ontario.</p>
+          <p className="text-foreground/75">
+            As a licensed psychotherapist in Ontario, I am able to provide online sessions to
+            clients anywhere in Ontario.
+          </p>
         </div>
       </section>
 

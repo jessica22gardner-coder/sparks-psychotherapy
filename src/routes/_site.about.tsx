@@ -143,11 +143,6 @@ function AboutPage() {
             safety in therapy is not assumed, it is built through trust, awareness, and
             accountability.
           </p>
-          <p className="text-2xl leading-relaxed">
-            I also acknowledge that this practice operates on the traditional lands of the
-            Mississaugas of the Credit First Nation. I am committed to ongoing learning about
-            Indigenous histories and to practicing in ways that honour this land and its peoples.
-          </p>
         </div>
       </section>
 

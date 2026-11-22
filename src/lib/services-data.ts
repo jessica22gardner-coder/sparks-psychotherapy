@@ -5,6 +5,8 @@ import couplesCounselling from "@/assets/couples-counselling.jpg";
 import emotionalWellness from "@/assets/emotional-wellness.jpg";
 import adoptionCounselling from "@/assets/adoption-counselling.jpg";
 import familyTherapy from "@/assets/family-therapy.jpg";
+import anxietyStress from "@/assets/anxiety-stress.jpg";
+import depression from "@/assets/depression.jpg";
 
 export type Service = {
   slug: string;
@@ -36,6 +38,7 @@ export const services: Service[] = [
     long: "Anxiety can show up as racing thoughts, tight shoulders, sleepless nights, or a constant sense of not-enoughness. Together we slow things down, understand what your nervous system is protecting you from, and build practical, embodied tools to move through daily life with more ease.",
     icon: Brain,
     gradient: "from-[oklch(0.90_0.05_165)] to-[oklch(0.94_0.03_95)]",
+    image: anxietyStress,
     overview: [
       "Anxiety is your system trying to keep you safe, often working overtime long after the original threat has passed. It can feel like a background hum of worry or an overwhelming wave that arrives without warning.",
       "Stress builds when the demands on you outpace the resources you feel you have. Left unaddressed, it shapes your sleep, focus, relationships, and sense of self.",
@@ -58,6 +61,7 @@ export const services: Service[] = [
     long: "Depression can flatten color from life and make ordinary tasks feel monumental. Therapy offers a warm, patient space to make sense of what's underneath, and gentle steps back toward meaning, connection, and hope.",
     icon: CloudRain,
     gradient: "from-[oklch(0.90_0.04_260)] to-[oklch(0.94_0.03_200)]",
+    image: depression,
     overview: [
       "Depression can quietly drain the colour from life. Ordinary tasks start to feel monumental, and the things that once brought joy begin to feel distant or dull.",
       "It is not a matter of willpower or a mood you can simply push through. Depression is a signal that something inside is asking for care.",

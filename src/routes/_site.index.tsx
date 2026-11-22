@@ -4,7 +4,7 @@ import portrait from "@/assets/jess-hero.jpg";
 import portrait2 from "@/assets/jess-home-about.jpg";
 import whoThisIsFor from "@/assets/who-this-is-for.jpg";
 import bentoGarden from "@/assets/bento-garden.jpg";
-import bentoHeard from "@/assets/bento-heard.jpg";
+import bentoReading from "@/assets/bento-reading.jpg";
 import bentoTeens from "@/assets/bento-teens.jpg";
 import bentoGrowing from "@/assets/bento-growing.jpg";
 import bentoLighter from "@/assets/bento-lighter.jpg";
@@ -248,7 +248,7 @@ function HomePage() {
           </article>
         </div>
 
-        {/* BENTO GALLERY — the journey: roots, joy returns, being heard, young voices, growing */}
+        {/* BENTO GALLERY — the journey: roots, joy returns, quiet togetherness, young voices, growing */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[240px]">
           <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft bg-secondary/50">
             <img
@@ -272,12 +272,12 @@ function HomePage() {
           </div>
           <div className="rounded-3xl overflow-hidden shadow-soft">
             <img
-              src={bentoHeard}
-              alt="A woman smiling warmly while talking one-on-one in therapy"
+              src={bentoReading}
+              alt="An older couple reading a book together on a couch"
               width={1000}
-              height={668}
+              height={1000}
               loading="lazy"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-[center_25%]"
             />
           </div>
           <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft bg-secondary/50">

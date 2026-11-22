@@ -45,16 +45,15 @@
   real response, with an email/call fallback when sending fails.
 - `public/contact.php` is the server-side handler (copied to `dist/` by the
   build). It validates the message and sends it to
-  info@sparkspsychotherapy.ca with PHP mail(), so no password lives
-  anywhere: the hosting server sends the message itself, and Hushmail
-  receives it through the domain's MX records. Deliverability note: the
-  domain's SPF record authorises only Hushmail, so if test messages are
-  rejected or land in spam, add Hostinger to it
-  (`v=spf1 include:_spf.hushmail.com include:_spf.mail.hostinger.com
-  -all`). The earlier Hushmail-login (SMTP) version of the handler is in
-  git history if it is ever needed. Never put email passwords, SMTP
-  credentials or API keys in this repo — they must live server-side
-  only.
+  info@sparkspsychotherapy.ca through Hushmail over encrypted SMTP
+  (smtp.hushmail.com, port 465, SSL), with the visitor's address as
+  Reply-To. It reads the Hushmail login from `mail-config.php`, a file
+  that lives one level above the website root on the server (outside
+  public_html) and is created by hand there. The password-free
+  mail() version was tried and REJECTED (test message went to spam,
+  2026-11-22) — the mail() version stays in git history only. Never put
+  email passwords, SMTP credentials or API keys in this repo — they must
+  live server-side only, in that file and nowhere else.
 
 ## Secrets
 

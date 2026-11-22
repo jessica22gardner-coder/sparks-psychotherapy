@@ -63,12 +63,12 @@ function TherapistsPage() {
                 <span className="font-serif text-7xl text-heading opacity-80">{t.initials}</span>
               )}
             </div>
-            <div className="p-10 flex flex-col flex-1 space-y-4">
+            <div className="p-12 flex flex-col flex-1 space-y-4">
               <div>
                 <h2 className="text-2xl">{t.name}</h2>
-                <p className="text-base text-primary mt-1">{t.credentials}</p>
+                <p className="text-xl text-primary mt-1">{t.credentials}</p>
               </div>
-              <p className="text-xl text-foreground/80 flex-1">{t.bio}</p>
+              <p className="text-2xl leading-relaxed text-foreground/80 flex-1">{t.bio}</p>
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">
                   Specialties

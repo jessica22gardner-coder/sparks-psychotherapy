@@ -129,7 +129,7 @@ function ContactPage() {
               </div>
               <Field label="Phone" name="phone" type="tel" />
               <div>
-                <label htmlFor="message" className="text-base text-foreground/80">
+                <label htmlFor="message" className="text-xl text-foreground/80">
                   Message
                 </label>
                 <textarea
@@ -137,7 +137,7 @@ function ContactPage() {
                   name="message"
                   required
                   rows={5}
-                  className="mt-1 w-full rounded-xl border border-border bg-background px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-ring"
+                  className="mt-1 w-full rounded-xl border border-border bg-background px-4 py-3 text-xl focus:outline-none focus:ring-2 focus:ring-ring"
                 />
               </div>
               <button
@@ -146,7 +146,7 @@ function ContactPage() {
               >
                 Send Message
               </button>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 This opens your email app with your message ready to send. The form itself
                 doesn&apos;t send email yet.
               </p>
@@ -171,7 +171,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="text-base text-foreground/80" htmlFor={name}>
+      <label className="text-xl text-foreground/80" htmlFor={name}>
         {label}
       </label>
       <input
@@ -179,7 +179,7 @@ function Field({
         name={name}
         type={type}
         required={required}
-        className="mt-1 w-full rounded-xl border border-border bg-background px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-ring"
+        className="mt-1 w-full rounded-xl border border-border bg-background px-4 py-3 text-xl focus:outline-none focus:ring-2 focus:ring-ring"
       />
     </div>
   );

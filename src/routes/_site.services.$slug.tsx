@@ -75,7 +75,7 @@ function ServiceDetail() {
         <div className="space-y-5">
           <p className="text-sm tracking-widest uppercase text-muted-foreground">Area of Care</p>
           <h1 className="text-4xl md:text-5xl font-serif">{service.title}</h1>
-          <p className="text-xl text-foreground/80">{service.short}</p>
+          <p className="text-2xl leading-relaxed text-foreground/80">{service.short}</p>
           <div className="flex flex-wrap gap-3 pt-2">
             <CtaButton to="/contact">Reach Out to Us</CtaButton>
           </div>
@@ -90,7 +90,7 @@ function ServiceDetail() {
           </p>
           <h2 className="text-3xl md:text-4xl">You are not alone in this.</h2>
           {service.overview.map((p: string, i: number) => (
-            <p key={i} className="text-foreground/85 leading-relaxed text-xl">
+            <p key={i} className="text-foreground/85 leading-relaxed text-2xl">
               {p}
             </p>
           ))}
@@ -113,7 +113,7 @@ function ServiceDetail() {
           {service.signs.map((s: string) => (
             <li
               key={s}
-              className="bg-card border border-border rounded-2xl px-6 py-6 flex gap-3 items-start shadow-soft"
+              className="bg-card border border-border rounded-2xl px-6 py-7 flex gap-3 items-start shadow-soft"
             >
               <Check size={20} className="text-primary mt-0.5 shrink-0" strokeWidth={2} />
               <span className="text-foreground/85">{s}</span>
@@ -136,7 +136,7 @@ function ServiceDetail() {
             {service.approach.map((a: string) => (
               <div
                 key={a}
-                className="bg-card border border-border rounded-3xl p-8 shadow-soft flex gap-4"
+                className="bg-card border border-border rounded-3xl p-10 shadow-soft flex gap-4"
               >
                 <div className="w-11 h-11 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
                   <Leaf size={20} className="text-primary" strokeWidth={1.5} />

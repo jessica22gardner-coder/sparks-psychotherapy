@@ -28,7 +28,7 @@ function BlogPage() {
     <>
       <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
         <h1 className="text-5xl md:text-6xl font-serif">From the Journal</h1>
-        <p className="text-xl text-foreground/80">
+        <p className="text-2xl leading-relaxed text-foreground/80">
           Reflections on emotions, relationships, and the slow work of feeling more like yourself.
         </p>
       </section>
@@ -53,7 +53,7 @@ function BlogPage() {
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
             </Link>
-            <div className="p-10 flex flex-col flex-1">
+            <div className="p-12 flex flex-col flex-1">
               <time
                 dateTime={p.date}
                 className="uppercase tracking-widest text-xs text-foreground/60"
@@ -61,7 +61,7 @@ function BlogPage() {
                 {p.dateLabel}
               </time>
               <h2 className="text-2xl mt-3 mb-4 leading-snug">{p.title}</h2>
-              <p className="text-lg text-foreground/75 flex-1">{p.excerpt}</p>
+              <p className="text-2xl leading-relaxed text-foreground/75 flex-1">{p.excerpt}</p>
               <Link
                 to="/blog/$slug"
                 params={{ slug: p.slug }}

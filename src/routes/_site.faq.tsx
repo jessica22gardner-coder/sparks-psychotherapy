@@ -87,7 +87,9 @@ function FaqPage() {
               <AccordionTrigger className="text-left text-xl font-serif text-heading">
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="text-xl text-foreground/80">{f.a}</AccordionContent>
+              <AccordionContent className="text-2xl leading-relaxed text-foreground/80">
+                {f.a}
+              </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

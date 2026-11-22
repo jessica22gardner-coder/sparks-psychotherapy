@@ -173,7 +173,7 @@ function Header() {
                   to="/services/$slug"
                   params={{ slug: s.slug }}
                   onClick={() => setOpen(false)}
-                  className="text-base text-foreground/80"
+                  className="text-xl text-foreground/80"
                 >
                   {s.title}
                 </Link>
@@ -273,12 +273,12 @@ function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-3 gap-10">
         <div>
           <Logo light />
-          <p className="mt-3 text-base opacity-90 max-w-xs">
+          <p className="mt-3 text-xl opacity-90 max-w-xs">
             In-person and virtual psychotherapy for adults and teens seeking deeper connection with
             themselves and others.
           </p>
         </div>
-        <div className="text-base space-y-2">
+        <div className="text-xl space-y-2">
           <p className="uppercase tracking-wider opacity-75 mb-3">Explore</p>
           {footerNav.map((l) => (
             <Link key={l.to} to={l.to} className="block hover:underline">
@@ -286,12 +286,12 @@ function Footer() {
             </Link>
           ))}
         </div>
-        <div className="text-base space-y-2">
+        <div className="text-xl space-y-2">
           <p className="uppercase tracking-wider opacity-75 mb-3">Contact</p>
           <p>1 (365) 977-0155</p>
           <p>info@sparkspsychotherapy.ca</p>
           <p>1155 North Service Road, Oakville, ON L6M 3E3</p>
-          <p className="opacity-80 mt-4 text-base">
+          <p className="opacity-80 mt-4 text-xl">
             Operating on the traditional and ancestral lands of the Mississaugas of the Credit First
             Nation.
           </p>

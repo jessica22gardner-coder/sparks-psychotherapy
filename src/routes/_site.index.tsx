@@ -110,7 +110,7 @@ function HomePage() {
             Emotional burdens can be heavy.{" "}
             <span className="italic">You don't have to carry it alone.</span>
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-md">
+          <p className="text-2xl leading-relaxed text-foreground/80 max-w-md">
             Therapy offers a space to better understand your emotions and begin to reconnect with
             yourself and others.
           </p>
@@ -134,7 +134,7 @@ function HomePage() {
             ].map((item) => (
               <li
                 key={item}
-                className="bg-card border border-border rounded-3xl p-12 text-xl text-foreground/85 shadow-soft"
+                className="bg-card border border-border rounded-3xl p-14 text-2xl leading-relaxed text-foreground/85 shadow-soft"
               >
                 {item}
               </li>
@@ -231,14 +231,14 @@ function HomePage() {
           <h2 className="text-4xl md:text-5xl">Therapy Options</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
-          <article className="bg-card rounded-3xl p-12 shadow-soft space-y-4 border border-border">
+          <article className="bg-card rounded-3xl p-14 shadow-soft space-y-4 border border-border">
             <h3 className="text-2xl">Individual Therapy</h3>
             <p className="text-foreground/80">
               One-on-one support focused on understanding your emotional landscape, learning to
               process what's been held inside, and taking action toward the change you want.
             </p>
           </article>
-          <article className="bg-card rounded-3xl p-12 shadow-soft space-y-4 border border-border">
+          <article className="bg-card rounded-3xl p-14 shadow-soft space-y-4 border border-border">
             <h3 className="text-2xl">Couples Therapy</h3>
             <p className="text-foreground/80">
               Support for couples to understand patterns that have created emotional distance.
@@ -305,16 +305,16 @@ function HomePage() {
 
       {/* INCLUSIVE CARE + LAND */}
       <section className="mx-auto max-w-5xl px-6 pb-20 grid md:grid-cols-2 gap-10">
-        <div className="bg-card rounded-3xl p-10 border border-border">
+        <div className="bg-card rounded-3xl p-12 border border-border">
           <h3 className="text-2xl mb-3">Inclusive Care</h3>
-          <p className="text-xl text-foreground/80">
+          <p className="text-2xl leading-relaxed text-foreground/80">
             I proudly provide affirming, culturally attuned therapy for 2SLGBTQIA+ and BIPOC
             individuals. You are welcome here.
           </p>
         </div>
-        <div className="bg-card rounded-3xl p-10 border border-border">
+        <div className="bg-card rounded-3xl p-12 border border-border">
           <h3 className="text-2xl mb-3">Land Acknowledgement</h3>
-          <p className="text-xl text-foreground/80">
+          <p className="text-2xl leading-relaxed text-foreground/80">
             Sparks Psychotherapy Services operates on the traditional and ancestral lands of the
             Mississaugas of the Credit First Nation. I acknowledge this land with gratitude and
             commit to ongoing learning and respect.

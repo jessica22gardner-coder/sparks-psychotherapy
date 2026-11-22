@@ -116,7 +116,7 @@ function SpeakingPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl">
               Creating Conversations That Change How We Understand Mental Health
             </h1>
-            <div className="max-w-xl text-xl leading-relaxed space-y-4">
+            <div className="max-w-xl text-2xl leading-relaxed space-y-4">
               <p>
                 Jess brings thoughtful, engaging and meaningful conversations about emotional
                 well-being, mental health, relationships and the human experience to organizations,
@@ -163,13 +163,13 @@ function SpeakingPage() {
                   <Icon className="shrink-0 text-heading h-8 w-8" strokeWidth={1.4} />
                   <div className="flex-1 min-w-0 space-y-3">
                     <h3 className="text-2xl lg:text-3xl">{audience.label}</h3>
-                    <p className="text-lg font-normal leading-relaxed text-muted-foreground">
+                    <p className="text-2xl font-normal leading-relaxed text-muted-foreground">
                       {audience.audience}
                     </p>
                   </div>
                   <ChevronDown className="size-4 shrink-0 text-muted-foreground group-open:rotate-180" />
                 </summary>
-                <div className="text-xl pb-9 space-y-8">
+                <div className="text-2xl pb-9 space-y-8">
                   <div className="max-w-4xl space-y-4 leading-relaxed">
                     <h4 className="text-2xl lg:text-3xl">{audience.headline}</h4>
                     <p>{audience.intro}</p>
@@ -243,7 +243,7 @@ function SpeakingPage() {
                   <span className="text-base text-muted-foreground shrink-0">0{index + 1}</span>
                   <span className="flex-1 min-w-0">{topic.title}</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-xl">
+                <AccordionContent className="text-2xl leading-relaxed">
                   <ul className="space-y-4 pl-10">
                     {topic.points.map((point) => (
                       <li key={point} className="flex gap-3 leading-relaxed">
@@ -275,13 +275,13 @@ function SpeakingPage() {
               <div className="space-y-3">
                 <p className="leading-relaxed">{format.description}</p>
                 {format.duration && (
-                  <p className="text-base text-heading font-medium">{format.duration}</p>
+                  <p className="text-xl text-heading font-medium">{format.duration}</p>
                 )}
               </div>
             </article>
           ))}
         </div>
-        <p className="flex gap-3 items-center text-base text-muted-foreground mt-8">
+        <p className="flex gap-3 items-center text-xl text-muted-foreground mt-8">
           <Globe2 size={20} className="shrink-0" />
           Engagements can be arranged in person or virtually, subject to availability.
         </p>

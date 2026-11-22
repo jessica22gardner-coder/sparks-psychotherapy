@@ -146,10 +146,6 @@ function ContactPage() {
               >
                 Send Message
               </button>
-              <p className="text-base text-muted-foreground">
-                This opens your email app with your message ready to send. The form itself
-                doesn&apos;t send email yet.
-              </p>
             </>
           )}
         </form>

@@ -248,7 +248,7 @@ function HomePage() {
           </article>
         </div>
 
-        {/* BENTO GALLERY — the journey: roots, joy returns, quiet togetherness, young voices, growing */}
+        {/* BENTO GALLERY, the journey: roots, joy returns, quiet togetherness, young voices, growing */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[280px]">
           <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft">
             <img
@@ -329,9 +329,6 @@ function HomePage() {
             Where I Practice
           </p>
           <h2 className="text-5xl md:text-6xl">In-person in Oakville, online across Ontario</h2>
-          <p className="text-foreground/80 max-w-2xl mx-auto">
-            I offer in-person therapy sessions in Oakville.
-          </p>
           <ul className="sr-only">
             {[
               "Oakville",

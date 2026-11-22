@@ -28,7 +28,7 @@ function TopBar() {
       <div className="mx-auto max-w-7xl px-4 py-2.5 text-center">
         <span className="font-medium">Accepting new clients:</span>{" "}
         <a href="tel:13659770155" className="hover:underline">
-          1(365)-977-0155
+          1 (365) 977-0155
         </a>{" "}
         <span className="opacity-70 mx-1">|</span>{" "}
         <a href="mailto:info@sparkspsychotherapy.ca" className="hover:underline">

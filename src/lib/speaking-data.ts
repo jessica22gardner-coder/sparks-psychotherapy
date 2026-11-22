@@ -73,13 +73,13 @@ export const speakingFormats = [
     title: "Keynote Speaking",
     description:
       "Engaging presentations for conferences, corporate events, professional gatherings and special occasions.",
-    duration: "30–60 minutes",
+    duration: "30 to 60 minutes",
   },
   {
     title: "Interactive Workshops",
     description:
       "Guided learning experiences that encourage reflection, discussion and practical takeaways.",
-    duration: "60–120 minutes",
+    duration: "60 to 120 minutes",
   },
   {
     title: "Corporate Wellness Sessions",

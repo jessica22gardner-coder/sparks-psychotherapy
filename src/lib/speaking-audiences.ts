@@ -38,7 +38,7 @@ export const speakingAudiences = [
       "Consider practical approaches to emotional regulation and resilience.",
     ],
     formats:
-      "Keynote speaking for corporate events, interactive employee wellness workshops and corporate wellness sessions. Keynotes typically run 30–60 minutes; interactive workshops typically run 60–120 minutes.",
+      "Keynote speaking for corporate events, interactive employee wellness workshops and corporate wellness sessions. Keynotes typically run 30 to 60 minutes; interactive workshops typically run 60 to 120 minutes.",
     cta: "Discuss Your Workplace Event",
     inquiry:
       "Tell Jess about your organization, audience, preferred topic, proposed date and event format. Include the challenges or learning priorities you would like the conversation to address.",
@@ -82,7 +82,7 @@ export const speakingAudiences = [
       "Consider ways to respond to uncertainty with compassion and resilience.",
     ],
     formats:
-      "Interactive workshops, guest speaking and retreats with group facilitation. Discuss half-day, full-day or customized retreat programs; individual interactive workshops typically run 60–120 minutes.",
+      "Interactive workshops, guest speaking and retreats with group facilitation. Discuss half-day, full-day or customized retreat programs; individual interactive workshops typically run 60 to 120 minutes.",
     cta: "Discuss Your Retreat",
     inquiry:
       "Share your retreat theme, audience, location, proposed dates and preferred session length. Let Jess know how emotional wellness or personal growth fits into the experience you are creating.",
@@ -126,7 +126,7 @@ export const speakingAudiences = [
       "Consider more empathetic approaches to conversations about mental health.",
     ],
     formats:
-      "Mental health awareness presentations, interactive workshops, panel discussions and guest speaking. Keynote presentations typically run 30–60 minutes; workshop sessions typically run 60–120 minutes.",
+      "Mental health awareness presentations, interactive workshops, panel discussions and guest speaking. Keynote presentations typically run 30 to 60 minutes; workshop sessions typically run 60 to 120 minutes.",
     cta: "Discuss Your Community Event",
     inquiry:
       "Tell Jess about your organization, event purpose, expected audience and topics of interest. Include your proposed date and whether you are planning a presentation, workshop or panel discussion.",
@@ -171,11 +171,9 @@ export const speakingAudiences = [
       "Consider inclusive approaches to discussing mental health in your community.",
     ],
     formats:
-      "Conference keynotes, educational presentations, professional-group workshops, panel discussions and guest speaking. Keynotes typically run 30–60 minutes; interactive workshops typically run 60–120 minutes.",
+      "Conference keynotes, educational presentations, professional-group workshops, panel discussions and guest speaking. Keynotes typically run 30 to 60 minutes; interactive workshops typically run 60 to 120 minutes.",
     cta: "Discuss Your Speaking Engagement",
     inquiry:
       "Share your school or association, event theme, audience and preferred learning focus. Include your proposed date, session length and any audience needs you would like to discuss.",
   },
 ] as const;
-
-export type SpeakingAudience = (typeof speakingAudiences)[number];

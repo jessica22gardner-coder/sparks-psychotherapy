@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "How long are sessions?",
-    a: "Individual sessions are 50 minutes. Couples sessions are 60–80 minutes.",
+    a: "Individual sessions are 50 minutes. Couples sessions are 60 to 80 minutes.",
   },
   {
     q: "Do you accept insurance?",

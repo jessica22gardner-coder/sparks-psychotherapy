@@ -71,8 +71,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "signs-therapy-is-working",
     title: "Signs Therapy Is Working",
-    date: "2026-04-08",
-    dateLabel: "April 8, 2026",
+    date: "2026-03-25",
+    dateLabel: "March 25, 2026",
     excerpt:
       "Progress in therapy is often subtle. It rarely looks dramatic or immediate. More often, it unfolds gradually through shifts in awareness, response, and relationship.",
     image: signsWorkingImg,
@@ -105,8 +105,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-know-if-your-therapist-is-a-match",
     title: "How to Know if Your Therapist is a Match",
-    date: "2026-04-08",
-    dateLabel: "April 8, 2026",
+    date: "2026-03-11",
+    dateLabel: "March 11, 2026",
     excerpt:
       "Choosing a Sparks therapist can feel overwhelming. There’s no need to hurry through the process. Thoughtful selection supports long-term success.",
     image: therapistMatchImg,
@@ -132,8 +132,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-use-an-emotion-wheel",
     title: "How to Use an Emotion Wheel",
-    date: "2026-04-08",
-    dateLabel: "April 8, 2026",
+    date: "2026-02-25",
+    dateLabel: "February 25, 2026",
     excerpt:
       "An emotion wheel is a visual tool designed to help you identify and name what you are feeling. For many adults, emotions can feel vague or overwhelming. The wheel provides language and clarity.",
     image: emotionWheelImg,
@@ -156,8 +156,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "what-are-cognitive-distortions",
     title: "What Are Cognitive Distortions?",
-    date: "2026-04-07",
-    dateLabel: "April 7, 2026",
+    date: "2026-02-11",
+    dateLabel: "February 11, 2026",
     excerpt:
       "Cognitive distortions are common patterns of thinking that can quietly shape how we see ourselves, others, and the world.",
     image: cognitiveDistortionsImg,
@@ -203,8 +203,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "what-is-cognitive-behavioural-therapy",
     title: "What is Cognitive Behavioural Therapy?",
-    date: "2026-04-07",
-    dateLabel: "April 7, 2026",
+    date: "2026-01-28",
+    dateLabel: "January 28, 2026",
     excerpt:
       "Cognitive Behavioural Therapy (CBT) is an evidence-based therapeutic approach developed by psychiatrist Dr. Aaron T. Beck in the 1960s, grounded in decades of research.",
     image: cbtImg,
@@ -244,8 +244,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "what-is-emotionally-focused-therapy",
     title: "What is Emotionally Focused Therapy?",
-    date: "2026-04-07",
-    dateLabel: "April 7, 2026",
+    date: "2026-01-14",
+    dateLabel: "January 14, 2026",
     excerpt:
       "Emotionally Focused Therapy (EFT) is an evidence-based approach developed by Dr. Sue Johnson, a clinical psychologist and leading researcher in attachment science.",
     image: eftImg,
@@ -277,8 +277,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "the-journey-from-emotional-immaturity-to-emotional-maturity",
     title: "The Journey From Emotional Immaturity to Emotional Maturity",
-    date: "2026-04-07",
-    dateLabel: "April 7, 2026",
+    date: "2025-12-31",
+    dateLabel: "December 31, 2025",
     excerpt:
       "Most of us were never formally taught how to be emotionally mature. Instead, we absorbed what was modelled for us, and it is a process that is entirely learnable.",
     image: emotionalMaturityImg,
@@ -304,8 +304,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "healthy-emotional-processing-what-it-actually-looks-like",
     title: "What Does Healthy Emotional Processing Actually Look Like?",
-    date: "2026-03-03",
-    dateLabel: "March 3, 2026",
+    date: "2025-12-17",
+    dateLabel: "December 17, 2025",
     excerpt:
       "Emotional processing is a phrase that gets used often but rarely explained clearly. Healthy emotional processing is not dramatic. It is something quieter and steadier.",
     image: healthyProcessingImg,
@@ -352,8 +352,8 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "the-basics-of-understanding-emotions",
     title: "The basics of understanding emotions",
-    date: "2026-03-02",
-    dateLabel: "March 2, 2026",
+    date: "2025-12-03",
+    dateLabel: "December 3, 2025",
     excerpt:
       "Have you ever felt overwhelmed by your emotions or unsure what you’re even feeling? Emotions are not problems to eliminate. They are signals to understand.",
     image: understandingEmotionsImg,

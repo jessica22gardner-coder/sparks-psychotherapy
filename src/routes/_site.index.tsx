@@ -5,7 +5,7 @@ import portrait2 from "@/assets/jess-home-about.jpg";
 import whoThisIsFor from "@/assets/who-this-is-for.jpg";
 import bentoGarden from "@/assets/bento-garden.jpg";
 import bentoHeard from "@/assets/bento-heard.jpg";
-import bentoNotAlone from "@/assets/bento-not-alone.jpg";
+import bentoTeens from "@/assets/bento-teens.jpg";
 import bentoGrowing from "@/assets/bento-growing.jpg";
 import bentoLighter from "@/assets/bento-lighter.jpg";
 import { BOOKING_URL, CtaButton } from "@/components/site-layout";
@@ -248,7 +248,7 @@ function HomePage() {
           </article>
         </div>
 
-        {/* BENTO GALLERY — the journey: roots, joy returns, being heard, not alone, growing */}
+        {/* BENTO GALLERY — the journey: roots, joy returns, being heard, young voices, growing */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[240px]">
           <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft bg-secondary/50">
             <img
@@ -282,12 +282,12 @@ function HomePage() {
           </div>
           <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft">
             <img
-              src={bentoNotAlone}
-              alt="Two people laughing together in a bright group session"
+              src={bentoTeens}
+              alt="Three teenagers smiling outdoors, one holding a microphone"
               width={1000}
-              height={667}
+              height={500}
               loading="lazy"
-              className="w-full h-full object-cover object-[center_20%]"
+              className="w-full h-full object-cover object-top"
             />
           </div>
           <div className="md:col-span-3 rounded-3xl overflow-hidden shadow-soft">

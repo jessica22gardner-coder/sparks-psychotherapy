@@ -165,12 +165,12 @@ function AboutPage() {
             style={{ filter: "drop-shadow(0 12px 16px rgba(0, 0, 0, 0.14))" }}
           >
             <div
-              className="absolute bottom-0 right-0 h-10 w-10 bg-[#e9d95f]"
+              className="absolute bottom-0 right-0 h-10 w-10 bg-[#fde68a]"
               style={{ clipPath: "polygon(100% 0, 0 100%, 100% 100%)" }}
               aria-hidden="true"
             />
             <div
-              className="relative bg-[#fef08a] p-8 md:p-12"
+              className="relative bg-[#fef9c3] p-8 md:p-12"
               style={{
                 clipPath:
                   "polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%)",

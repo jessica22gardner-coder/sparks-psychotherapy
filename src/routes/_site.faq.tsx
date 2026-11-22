@@ -70,7 +70,7 @@ function FaqPage() {
   return (
     <>
       <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
-        <h1 className="text-5xl font-serif">Frequently Asked</h1>
+        <h1 className="text-6xl font-serif">Frequently Asked</h1>
         <p className="text-foreground/80">
           Answers to a few of the most common questions. If yours isn't here, please reach out.
         </p>
@@ -84,7 +84,7 @@ function FaqPage() {
               value={`item-${i}`}
               className="bg-card border border-border rounded-2xl px-6"
             >
-              <AccordionTrigger className="text-left text-xl font-serif text-heading">
+              <AccordionTrigger className="text-left text-2xl font-serif text-heading">
                 {f.q}
               </AccordionTrigger>
               <AccordionContent className="text-2xl leading-relaxed text-foreground/80">

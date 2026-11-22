@@ -54,7 +54,7 @@ function ContactPage() {
   return (
     <>
       <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
-        <h1 className="text-5xl font-serif">Let's connect</h1>
+        <h1 className="text-6xl font-serif">Let's connect</h1>
         <p className="text-foreground/80">
           Schedule your free 15-minute connection call, or email me and I&apos;ll be in touch within
           two business days.
@@ -107,7 +107,7 @@ function ContactPage() {
         >
           {composed ? (
             <div className="text-center py-12 space-y-3">
-              <h2 className="text-3xl">Thank You!</h2>
+              <h2 className="text-4xl">Thank You!</h2>
               <p className="text-foreground/80">
                 Your email app should open with your message ready to send. If it doesn&apos;t,
                 please email{" "}

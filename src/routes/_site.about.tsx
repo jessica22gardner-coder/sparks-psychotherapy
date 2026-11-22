@@ -32,7 +32,7 @@ function AboutPage() {
           <p className="text-lg tracking-widest uppercase text-muted-foreground">
             The foundation of my work is this…
           </p>
-          <h1 className="text-4xl md:text-5xl font-serif">
+          <h1 className="text-5xl md:text-6xl font-serif">
             To offer a space where you can better hear, understand, and work with your emotions
             toward greater wholeness and well-being.
           </h1>
@@ -49,7 +49,7 @@ function AboutPage() {
       {/* MY STORY */}
       <section className="bg-secondary/25 py-20">
         <div className="mx-auto max-w-3xl px-6 space-y-6 text-foreground/85">
-          <h2 className="text-3xl">My Story</h2>
+          <h2 className="text-4xl">My Story</h2>
           <p className="text-2xl leading-relaxed">
             Hi, I&apos;m Jess, a Registered Psychotherapist who cares deeply about helping you
             understand your emotions and what to do with them.
@@ -95,8 +95,8 @@ function AboutPage() {
 
       {/* APPROACH TO THERAPY */}
       <section className="py-20">
-        <div className="mx-auto max-w-6xl px-6 space-y-6 text-foreground/85">
-          <h2 className="text-3xl text-center">Approach to Therapy</h2>
+        <div className="mx-auto max-w-7xl px-6 space-y-6 text-foreground/85">
+          <h2 className="text-4xl text-center">Approach to Therapy</h2>
           <div className="space-y-2 text-center">
             <p>My work is grounded in compassion, curiosity, and collaboration.</p>
             <p>In our sessions, you&apos;ll find:</p>
@@ -158,7 +158,7 @@ function AboutPage() {
             <p className="text-lg tracking-widest uppercase text-muted-foreground">
               A message from Jess
             </p>
-            <h2 className="text-3xl md:text-4xl font-serif">A note from Jess</h2>
+            <h2 className="text-4xl md:text-5xl font-serif">A note from Jess</h2>
           </div>
           <div
             className="relative mx-auto max-w-lg -rotate-1 text-left"
@@ -180,7 +180,7 @@ function AboutPage() {
                 If you&apos;re ready to understand your emotions more deeply and feel supported
                 through the process, I&apos;d be privileged to work with you.
               </p>
-              <p className="font-handwriting text-2xl md:text-3xl text-right pt-6 text-heading">
+              <p className="font-handwriting text-3xl md:text-4xl text-right pt-6 text-heading">
                 Jess
               </p>
             </div>

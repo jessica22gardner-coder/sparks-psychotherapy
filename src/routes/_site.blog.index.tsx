@@ -27,13 +27,13 @@ function BlogPage() {
   return (
     <>
       <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
-        <h1 className="text-5xl md:text-6xl font-serif">From the Journal</h1>
+        <h1 className="text-6xl md:text-7xl font-serif">From the Journal</h1>
         <p className="text-2xl leading-relaxed text-foreground/80">
           Reflections on emotions, relationships, and the slow work of feeling more like yourself.
         </p>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-24 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <section className="mx-auto max-w-7xl px-6 pb-24 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         {blogPosts.map((p) => (
           <article
             key={p.slug}
@@ -60,7 +60,7 @@ function BlogPage() {
               >
                 {p.dateLabel}
               </time>
-              <h2 className="text-2xl mt-3 mb-4 leading-snug">{p.title}</h2>
+              <h2 className="text-3xl mt-3 mb-4 leading-snug">{p.title}</h2>
               <p className="text-2xl leading-relaxed text-foreground/75 flex-1">{p.excerpt}</p>
               <Link
                 to="/blog/$slug"

@@ -75,7 +75,7 @@ function BlogPostPage() {
         >
           {post.dateLabel}
         </time>
-        <h1 className="text-4xl md:text-5xl font-serif mt-3 leading-tight">{post.title}</h1>
+        <h1 className="text-5xl md:text-6xl font-serif mt-3 leading-tight">{post.title}</h1>
 
         <div className="mt-10 aspect-[16/9] rounded-3xl overflow-hidden shadow-soft">
           <img
@@ -96,8 +96,8 @@ function BlogPostPage() {
 
       {others.length > 0 && (
         <section className="bg-secondary/25 py-16">
-          <div className="mx-auto max-w-5xl px-6">
-            <h2 className="text-2xl font-serif mb-8">Keep reading</h2>
+          <div className="mx-auto max-w-7xl px-6">
+            <h2 className="text-3xl font-serif mb-8">Keep reading</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {others.map((p) => (
                 <Link
@@ -120,7 +120,7 @@ function BlogPostPage() {
                     <time className="uppercase tracking-widest text-xs text-foreground/60">
                       {p.dateLabel}
                     </time>
-                    <h3 className="text-xl mt-2">{p.title}</h3>
+                    <h3 className="text-2xl mt-2">{p.title}</h3>
                   </div>
                 </Link>
               ))}
@@ -135,7 +135,7 @@ function BlogPostPage() {
 function BlogNotFound() {
   return (
     <section className="mx-auto max-w-2xl px-6 py-16 text-center space-y-6">
-      <h1 className="text-4xl font-serif">Post not found</h1>
+      <h1 className="text-5xl font-serif">Post not found</h1>
       <p className="text-foreground/75">
         The article you're looking for isn't here. Head back to the journal to browse the latest
         reflections.

@@ -270,7 +270,7 @@ function PsychologyTodaySeal() {
 function Footer() {
   return (
     <footer className="bg-topbar text-topbar-foreground">
-      <div className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-3 gap-10">
+      <div className="mx-auto max-w-7xl px-6 py-16 grid md:grid-cols-3 gap-10">
         <div>
           <Logo light />
           <p className="mt-3 text-xl opacity-90 max-w-xs">

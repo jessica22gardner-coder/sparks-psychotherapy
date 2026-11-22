@@ -106,7 +106,7 @@ function HomePage() {
           <p className="text-lg tracking-widest uppercase text-muted-foreground">
             In-person and virtual therapy
           </p>
-          <h1 className="text-5xl md:text-6xl font-serif">
+          <h1 className="text-6xl md:text-7xl font-serif">
             Emotional burdens can be heavy.{" "}
             <span className="italic">You don't have to carry it alone.</span>
           </h1>
@@ -120,8 +120,8 @@ function HomePage() {
 
       {/* WHO I WORK WITH */}
       <section className="bg-secondary/25 py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-6 text-center space-y-8">
-          <h2 className="text-4xl md:text-5xl">Who I Work With</h2>
+        <div className="mx-auto max-w-7xl px-6 text-center space-y-8">
+          <h2 className="text-5xl md:text-6xl">Who I Work With</h2>
           <p className="max-w-2xl mx-auto text-foreground/80">
             I specialize in supporting adults and teens who:
           </p>
@@ -151,7 +151,7 @@ function HomePage() {
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-20 md:py-28 grid md:grid-cols-5 gap-12 md:gap-16 lg:gap-24 items-center">
         <div className="md:col-span-3">
           <div className="relative z-10 bg-card border border-border rounded-[2.5rem] p-8 md:p-10 shadow-soft space-y-6 md:-mr-24 lg:-mr-28">
-            <h2 className="text-3xl md:text-4xl">
+            <h2 className="text-4xl md:text-5xl">
               Hi, I&apos;m Jess, a Registered Psychotherapist who cares deeply about helping you
               understand your emotions and what to do with them.
             </h2>
@@ -185,7 +185,7 @@ function HomePage() {
       <section className="bg-secondary/25 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6 md:px-10 grid md:grid-cols-5 gap-12 md:gap-16 lg:gap-24 items-center">
           <div className="md:col-span-3 space-y-6">
-            <h2 className="text-4xl md:text-5xl">Who This Is For</h2>
+            <h2 className="text-5xl md:text-6xl">Who This Is For</h2>
             <p className="text-foreground/80">
               It&apos;s a great privilege to join you in navigating these challenges together. For
               adults and teens who grew up feeling emotionally unseen, and are ready to finally
@@ -225,21 +225,21 @@ function HomePage() {
       </section>
 
       {/* WHAT I OFFER */}
-      <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+      <section className="mx-auto max-w-7xl px-6 py-20 md:py-28">
         <div className="text-center space-y-4 mb-14">
           <p className="text-lg tracking-widest uppercase text-muted-foreground">How I Work</p>
-          <h2 className="text-4xl md:text-5xl">Therapy Options</h2>
+          <h2 className="text-5xl md:text-6xl">Therapy Options</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           <article className="bg-card rounded-3xl p-14 shadow-soft space-y-4 border border-border">
-            <h3 className="text-2xl">Individual Therapy</h3>
+            <h3 className="text-3xl">Individual Therapy</h3>
             <p className="text-foreground/80">
               One-on-one support focused on understanding your emotional landscape, learning to
               process what's been held inside, and taking action toward the change you want.
             </p>
           </article>
           <article className="bg-card rounded-3xl p-14 shadow-soft space-y-4 border border-border">
-            <h3 className="text-2xl">Couples Therapy</h3>
+            <h3 className="text-3xl">Couples Therapy</h3>
             <p className="text-foreground/80">
               Support for couples to understand patterns that have created emotional distance.
               Together we build new cycles of understanding and functional communication, restoring
@@ -249,7 +249,7 @@ function HomePage() {
         </div>
 
         {/* BENTO GALLERY — the journey: roots, joy returns, quiet togetherness, young voices, growing */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[240px]">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[280px]">
           <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft">
             <img
               src={bentoGarden}
@@ -304,16 +304,16 @@ function HomePage() {
       </section>
 
       {/* INCLUSIVE CARE + LAND */}
-      <section className="mx-auto max-w-5xl px-6 pb-20 grid md:grid-cols-2 gap-10">
+      <section className="mx-auto max-w-7xl px-6 pb-20 grid md:grid-cols-2 gap-10">
         <div className="bg-card rounded-3xl p-12 border border-border">
-          <h3 className="text-2xl mb-3">Inclusive Care</h3>
+          <h3 className="text-3xl mb-3">Inclusive Care</h3>
           <p className="text-2xl leading-relaxed text-foreground/80">
             I proudly provide affirming, culturally attuned therapy for 2SLGBTQIA+ and BIPOC
             individuals. You are welcome here.
           </p>
         </div>
         <div className="bg-card rounded-3xl p-12 border border-border">
-          <h3 className="text-2xl mb-3">Land Acknowledgement</h3>
+          <h3 className="text-3xl mb-3">Land Acknowledgement</h3>
           <p className="text-2xl leading-relaxed text-foreground/80">
             Sparks Psychotherapy Services operates on the traditional and ancestral lands of the
             Mississaugas of the Credit First Nation. I acknowledge this land with gratitude and
@@ -328,7 +328,7 @@ function HomePage() {
           <p className="text-lg tracking-widest uppercase text-muted-foreground">
             Where I Practice
           </p>
-          <h2 className="text-4xl md:text-5xl">In-person in Oakville, online across Ontario</h2>
+          <h2 className="text-5xl md:text-6xl">In-person in Oakville, online across Ontario</h2>
           <p className="text-foreground/80 max-w-2xl mx-auto">
             I offer in-person therapy sessions at 1155 North Service Road in Oakville.
           </p>
@@ -352,7 +352,7 @@ function HomePage() {
       {/* CTA */}
       <section className="bg-primary/15 py-20">
         <div className="mx-auto max-w-3xl px-6 text-center space-y-6">
-          <h2 className="text-4xl md:text-5xl">
+          <h2 className="text-5xl md:text-6xl">
             Interested in exploring therapy? I'd be glad to connect.
           </h2>
           <p className="text-foreground/80">Schedule your free connection call today.</p>

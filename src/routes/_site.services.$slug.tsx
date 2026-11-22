@@ -47,7 +47,7 @@ export const Route = createFileRoute("/_site/services/$slug")({
   component: ServiceDetail,
   notFoundComponent: () => (
     <div className="mx-auto max-w-2xl px-6 py-16 text-center space-y-4">
-      <h1 className="text-4xl font-serif">Service not found</h1>
+      <h1 className="text-5xl font-serif">Service not found</h1>
       <p className="text-foreground/80">The service you're looking for doesn't exist yet.</p>
       <CtaButton to="/">Back to Home</CtaButton>
     </div>
@@ -74,7 +74,7 @@ function ServiceDetail() {
         </div>
         <div className="space-y-5">
           <p className="text-lg tracking-widest uppercase text-muted-foreground">Area of Care</p>
-          <h1 className="text-4xl md:text-5xl font-serif">{service.title}</h1>
+          <h1 className="text-5xl md:text-6xl font-serif">{service.title}</h1>
           <p className="text-2xl leading-relaxed text-foreground/80">{service.short}</p>
           <div className="flex flex-wrap gap-3 pt-2">
             <CtaButton to="/contact">Reach Out to Us</CtaButton>
@@ -88,7 +88,7 @@ function ServiceDetail() {
           <p className="text-lg tracking-widest uppercase text-muted-foreground">
             Understanding {service.title}
           </p>
-          <h2 className="text-3xl md:text-4xl">You are not alone in this.</h2>
+          <h2 className="text-4xl md:text-5xl">You are not alone in this.</h2>
           {service.overview.map((p: string, i: number) => (
             <p key={i} className="text-foreground/85 leading-relaxed text-2xl">
               {p}
@@ -98,12 +98,12 @@ function ServiceDetail() {
       </section>
 
       {/* Signs */}
-      <section className="mx-auto max-w-5xl px-6 py-20 md:py-24">
+      <section className="mx-auto max-w-7xl px-6 py-20 md:py-24">
         <div className="text-center space-y-4 mb-12">
           <p className="text-lg tracking-widest uppercase text-muted-foreground">
             What it can look like
           </p>
-          <h2 className="text-3xl md:text-4xl">Signs and experiences</h2>
+          <h2 className="text-4xl md:text-5xl">Signs and experiences</h2>
           <p className="text-foreground/75 max-w-2xl mx-auto">
             You might recognise some of these. You don't need to identify with all of them to reach
             out.
@@ -124,12 +124,12 @@ function ServiceDetail() {
 
       {/* How therapy can help */}
       <section className="bg-secondary/25 py-20 md:py-24">
-        <div className="mx-auto max-w-5xl px-6">
+        <div className="mx-auto max-w-7xl px-6">
           <div className="text-center space-y-4 mb-12">
             <p className="text-lg tracking-widest uppercase text-muted-foreground">
               How therapy can help
             </p>
-            <h2 className="text-3xl md:text-4xl">A path forward, together</h2>
+            <h2 className="text-4xl md:text-5xl">A path forward, together</h2>
             <p className="text-foreground/80 max-w-2xl mx-auto leading-relaxed">{service.long}</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
@@ -150,7 +150,7 @@ function ServiceDetail() {
 
       {/* CTA */}
       <section className="mx-auto max-w-3xl px-6 py-20 md:py-24 text-center space-y-6">
-        <h2 className="text-3xl md:text-4xl">Ready to take the next step?</h2>
+        <h2 className="text-4xl md:text-5xl">Ready to take the next step?</h2>
         <p className="text-foreground/80 leading-relaxed">
           Sessions are offered in person and virtually across Ontario, and are paced to what your
           system is ready for. If you'd like to explore whether we're the right fit, we invite you

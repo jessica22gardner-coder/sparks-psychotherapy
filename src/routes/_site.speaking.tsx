@@ -113,7 +113,7 @@ function SpeakingPage() {
             <p className="uppercase tracking-widest text-xs font-medium text-heading flex items-center gap-2">
               <Mic2 size={16} /> Speaking & Workshops with Jess
             </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl">
               Creating Conversations That Change How We Understand Mental Health
             </h1>
             <div className="max-w-xl text-2xl leading-relaxed space-y-4">
@@ -147,7 +147,7 @@ function SpeakingPage() {
       </section>
       <section className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
         <div className="max-w-3xl space-y-4 mb-10">
-          <h2 className="text-3xl md:text-4xl">Meaningful Conversations for Every Audience</h2>
+          <h2 className="text-4xl md:text-5xl">Meaningful Conversations for Every Audience</h2>
           <p className="leading-relaxed">
             Whether you're creating a healthier workplace, hosting a wellness retreat or organizing
             a mental health event, Jess brings thoughtful perspectives and meaningful conversations
@@ -162,7 +162,7 @@ function SpeakingPage() {
                 <summary className="flex items-center py-7 gap-4 text-left cursor-pointer list-none [&::-webkit-details-marker]:hidden focus-visible:outline-2 focus-visible:outline-ring">
                   <Icon className="shrink-0 text-heading h-8 w-8" strokeWidth={1.4} />
                   <div className="flex-1 min-w-0 space-y-3">
-                    <h3 className="text-2xl lg:text-3xl">{audience.label}</h3>
+                    <h3 className="text-3xl lg:text-4xl">{audience.label}</h3>
                     <p className="text-2xl font-normal leading-relaxed text-muted-foreground">
                       {audience.audience}
                     </p>
@@ -171,7 +171,7 @@ function SpeakingPage() {
                 </summary>
                 <div className="text-2xl pb-9 space-y-8">
                   <div className="max-w-4xl space-y-4 leading-relaxed">
-                    <h4 className="text-2xl lg:text-3xl">{audience.headline}</h4>
+                    <h4 className="text-3xl lg:text-4xl">{audience.headline}</h4>
                     <p>{audience.intro}</p>
                     <p>{audience.context}</p>
                     <p>{audience.planning}</p>
@@ -179,14 +179,14 @@ function SpeakingPage() {
                   <div className="grid md:grid-cols-2 gap-x-12 gap-y-7">
                     {audience.topics.map((topic) => (
                       <div key={topic.title} className="space-y-3">
-                        <h4 className="text-2xl">{topic.title}</h4>
+                        <h4 className="text-3xl">{topic.title}</h4>
                         <p className="leading-relaxed">{topic.text}</p>
                       </div>
                     ))}
                   </div>
                   <div className="grid md:grid-cols-2 gap-10">
                     <div>
-                      <h4 className="text-2xl mb-4">Potential learning outcomes</h4>
+                      <h4 className="text-3xl mb-4">Potential learning outcomes</h4>
                       <p className="leading-relaxed mb-4">
                         Depending on the topic and format, participants may have opportunities to:
                       </p>
@@ -200,7 +200,7 @@ function SpeakingPage() {
                       </ul>
                     </div>
                     <div className="space-y-4">
-                      <h4 className="text-2xl">Planning your engagement</h4>
+                      <h4 className="text-3xl">Planning your engagement</h4>
                       <p className="leading-relaxed">{audience.formats}</p>
                       <p className="leading-relaxed">{audience.inquiry}</p>
                       <div className="flex flex-wrap gap-3">
@@ -233,7 +233,7 @@ function SpeakingPage() {
           <p className="uppercase tracking-widest text-xs text-muted-foreground mb-4">
             Speaking Topics
           </p>
-          <h2 className="text-3xl md:text-4xl max-w-2xl mb-8">
+          <h2 className="text-4xl md:text-5xl max-w-2xl mb-8">
             Topics That Matter. Conversations That Make a Difference.
           </h2>
           <Accordion type="multiple" className="grid md:grid-cols-2 gap-x-12 items-start">
@@ -259,7 +259,7 @@ function SpeakingPage() {
         </div>
       </section>
       <section className="mx-auto max-w-6xl px-6 py-16 lg:py-20">
-        <h2 className="text-3xl md:text-4xl mb-4">Different Formats. One Meaningful Purpose.</h2>
+        <h2 className="text-4xl md:text-5xl mb-4">Different Formats. One Meaningful Purpose.</h2>
         <p className="max-w-3xl leading-relaxed mb-10">
           Every audience and event is different. Jess offers flexible speaking and facilitation
           formats that can be adapted to your organization's needs, audience and objectives.
@@ -271,7 +271,7 @@ function SpeakingPage() {
               className="grid md:grid-cols-[60px_1fr_1.5fr] gap-3 md:gap-8 py-7"
             >
               <span className="text-muted-foreground text-sm">0{index + 1}</span>
-              <h3 className="text-2xl">{format.title}</h3>
+              <h3 className="text-3xl">{format.title}</h3>
               <div className="space-y-3">
                 <p className="leading-relaxed">{format.description}</p>
                 {format.duration && (
@@ -296,7 +296,7 @@ function SpeakingPage() {
             loading="lazy"
             className="mx-auto h-40 w-40 rounded-full object-cover object-[center_25%] shadow-soft"
           />
-          <h2 className="text-3xl md:text-4xl">Creating Impact Through Meaningful Engagements</h2>
+          <h2 className="text-4xl md:text-5xl">Creating Impact Through Meaningful Engagements</h2>
           <p className="leading-relaxed">
             Every audience is different. Jess takes a thoughtful and collaborative approach to
             creating engagements that reflect the needs, interests and objectives of each group.

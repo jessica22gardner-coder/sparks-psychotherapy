@@ -28,14 +28,14 @@ function CareersPage() {
     <>
       <section className="mx-auto max-w-3xl px-6 py-10 md:py-16 text-center space-y-4">
         <p className="text-lg tracking-widest uppercase text-muted-foreground">Join our team</p>
-        <h1 className="text-5xl font-serif">Careers at Sparks</h1>
+        <h1 className="text-6xl font-serif">Careers at Sparks</h1>
         <p className="text-foreground/80">
           We're building a small, values-led practice where clinicians can do their best work,
           supported, resourced, and genuinely cared for.
         </p>
       </section>
 
-      <section className="mx-auto max-w-4xl px-6 pb-20 grid md:grid-cols-2 gap-6">
+      <section className="mx-auto max-w-7xl px-6 pb-20 grid md:grid-cols-2 gap-6">
         {[
           {
             title: "What we look for",
@@ -58,7 +58,7 @@ function CareersPage() {
             key={c.title}
             className="bg-card border border-border rounded-3xl p-12 shadow-soft space-y-3"
           >
-            <h2 className="text-2xl">{c.title}</h2>
+            <h2 className="text-3xl">{c.title}</h2>
             <p className="text-2xl leading-relaxed text-foreground/80">{c.body}</p>
           </div>
         ))}

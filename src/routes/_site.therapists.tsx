@@ -32,14 +32,14 @@ function TherapistsPage() {
         <p className="text-lg tracking-widest uppercase text-muted-foreground">
           Meet your therapist
         </p>
-        <h1 className="text-5xl font-serif">Your Therapist</h1>
+        <h1 className="text-6xl font-serif">Your Therapist</h1>
         <p className="text-foreground/80">
           Jess Sparks is a Registered Psychotherapist offering warm, grounded, evidence-based care
           for adults and teens, in person and online.
         </p>
       </section>
 
-      <section className="mx-auto max-w-md px-6 pb-20">
+      <section className="mx-auto max-w-2xl px-6 pb-20">
         {therapists.map((t) => (
           <article
             key={t.slug}
@@ -65,7 +65,7 @@ function TherapistsPage() {
             </div>
             <div className="p-12 flex flex-col flex-1 space-y-4">
               <div>
-                <h2 className="text-2xl">{t.name}</h2>
+                <h2 className="text-3xl">{t.name}</h2>
                 <p className="text-xl text-primary mt-1">{t.credentials}</p>
               </div>
               <p className="text-2xl leading-relaxed text-foreground/80 flex-1">{t.bio}</p>

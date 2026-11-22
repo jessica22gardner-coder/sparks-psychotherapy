@@ -214,9 +214,9 @@ function HomePage() {
           <div className="md:col-span-2">
             <img
               src={whoThisIsFor}
-              alt="A man seated in an armchair during a therapy session"
-              width={614}
-              height={768}
+              alt="Two people holding hands over cups of hot chocolate"
+              width={714}
+              height={892}
               loading="lazy"
               className="rounded-3xl shadow-soft w-full h-auto"
             />

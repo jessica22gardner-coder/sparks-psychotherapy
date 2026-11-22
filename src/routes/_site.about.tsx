@@ -50,7 +50,7 @@ function AboutPage() {
       <section className="bg-secondary/25 py-20">
         <div className="mx-auto max-w-3xl px-6 space-y-6 text-foreground/85">
           <h2 className="text-3xl">My Story</h2>
-          <p className="text-lg">
+          <p className="text-xl">
             Hi, I&apos;m Jess, a Registered Psychotherapist who cares deeply about helping you
             understand your emotions and what to do with them.
           </p>
@@ -102,19 +102,19 @@ function AboutPage() {
             <p>In our sessions, you&apos;ll find:</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
-              <p className="text-lg">
+            <div className="bg-card border border-border rounded-3xl p-8 shadow-soft">
+              <p className="text-xl">
                 Your experiences are met with deep care, great respect, and genuine curiosity.
               </p>
             </div>
-            <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
-              <p className="text-lg">
+            <div className="bg-card border border-border rounded-3xl p-8 shadow-soft">
+              <p className="text-xl">
                 Minds and hearts aligned toward growth, working collaboratively at a pace that feels
                 supportive and right for you.
               </p>
             </div>
-            <div className="bg-card border border-border rounded-3xl p-7 shadow-soft">
-              <p className="text-lg">
+            <div className="bg-card border border-border rounded-3xl p-8 shadow-soft">
+              <p className="text-xl">
                 Practical, thoughtful support, tailored to your goals while honoring your values,
                 strengths, and lived experience.
               </p>
@@ -133,17 +133,17 @@ function AboutPage() {
           <h2 className="text-3xl text-topbar-foreground">
             Inclusive &amp; Culturally Attuned Care
           </h2>
-          <p className="text-lg">
+          <p className="text-xl">
             I recognize that our emotional lives are shaped by culture, identity, family systems,
             and lived experience. My practice is committed to providing affirming, culturally
             responsive care for 2SLGBTQIA+ and BIPOC individuals.
           </p>
-          <p className="text-lg">
+          <p className="text-xl">
             Therapy with me is grounded in respect, curiosity, and humility. I understand that
             safety in therapy is not assumed, it is built through trust, awareness, and
             accountability.
           </p>
-          <p className="text-lg">
+          <p className="text-xl">
             I also acknowledge that this practice operates on the traditional lands of the
             Mississaugas of the Credit First Nation. I am committed to ongoing learning about
             Indigenous histories and to practicing in ways that honour this land and its peoples.

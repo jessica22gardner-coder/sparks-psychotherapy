@@ -56,10 +56,10 @@ function CareersPage() {
         ].map((c) => (
           <div
             key={c.title}
-            className="bg-card border border-border rounded-3xl p-8 shadow-soft space-y-3"
+            className="bg-card border border-border rounded-3xl p-10 shadow-soft space-y-3"
           >
             <h2 className="text-2xl">{c.title}</h2>
-            <p className="text-sm text-foreground/80">{c.body}</p>
+            <p className="text-lg text-foreground/80">{c.body}</p>
           </div>
         ))}
       </section>

@@ -87,7 +87,7 @@ function BlogPostPage() {
           />
         </div>
 
-        <div className="mt-10 space-y-6 text-lg text-foreground/85 leading-relaxed">
+        <div className="mt-10 space-y-6 text-xl text-foreground/85 leading-relaxed">
           {post.content.map((p: string, i: number) => (
             <p key={i}>{p}</p>
           ))}

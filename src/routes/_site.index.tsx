@@ -3,11 +3,11 @@ import { SquareCheck } from "lucide-react";
 import portrait from "@/assets/jess-hero.jpg";
 import portrait2 from "@/assets/jess-home-about.jpg";
 import whoThisIsFor from "@/assets/who-this-is-for.jpg";
+import bentoGarden from "@/assets/bento-garden.jpg";
 import bentoHeard from "@/assets/bento-heard.jpg";
 import bentoNotAlone from "@/assets/bento-not-alone.jpg";
 import bentoGrowing from "@/assets/bento-growing.jpg";
 import bentoLighter from "@/assets/bento-lighter.jpg";
-import bentoHome from "@/assets/bento-home.jpg";
 import { BOOKING_URL, CtaButton } from "@/components/site-layout";
 
 export const Route = createFileRoute("/_site/")({
@@ -248,56 +248,56 @@ function HomePage() {
           </article>
         </div>
 
-        {/* BENTO GALLERY — the journey: being heard, not alone, growing, lighter together, home */}
+        {/* BENTO GALLERY — the journey: roots, joy returns, being heard, not alone, growing */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[240px]">
-          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft">
+          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft bg-secondary/50">
             <img
-              src={bentoHeard}
-              alt="A woman smiling warmly while talking one-on-one in therapy"
+              src={bentoGarden}
+              alt="An older man smiling with two young girls in a sunny garden"
               width={1000}
-              height={668}
+              height={500}
               loading="lazy"
-              className="w-full h-full object-cover object-[center_30%]"
+              className="w-full h-full object-contain"
             />
           </div>
-          <div className="rounded-3xl overflow-hidden shadow-soft">
-            <img
-              src={bentoNotAlone}
-              alt="Two people laughing together in a bright group session"
-              width={1000}
-              height={667}
-              loading="lazy"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="rounded-3xl overflow-hidden shadow-soft">
-            <img
-              src={bentoGrowing}
-              alt="A young woman smiling softly beside a plant, feeling at ease"
-              width={1000}
-              height={388}
-              loading="lazy"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft">
+          <div className="rounded-3xl overflow-hidden shadow-soft bg-secondary/50">
             <img
               src={bentoLighter}
               alt="A couple laughing together in deck chairs"
               width={1000}
               height={667}
               loading="lazy"
-              className="w-full h-full object-cover object-[center_25%]"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="rounded-3xl overflow-hidden shadow-soft">
+            <img
+              src={bentoHeard}
+              alt="A woman smiling warmly while talking one-on-one in therapy"
+              width={1000}
+              height={668}
+              loading="lazy"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-soft">
+            <img
+              src={bentoNotAlone}
+              alt="Two people laughing together in a bright group session"
+              width={1000}
+              height={667}
+              loading="lazy"
+              className="w-full h-full object-cover object-[center_20%]"
             />
           </div>
           <div className="md:col-span-3 rounded-3xl overflow-hidden shadow-soft">
             <img
-              src={bentoHome}
-              alt="A family laughing together on a couch surrounded by moving boxes"
+              src={bentoGrowing}
+              alt="A young woman smiling softly beside a plant, feeling at ease"
               width={1000}
-              height={400}
+              height={388}
               loading="lazy"
-              className="w-full h-full object-cover object-[25%_35%]"
+              className="w-full h-full object-cover object-[center_25%]"
             />
           </div>
         </div>

@@ -31,57 +31,6 @@ export const Route = createFileRoute("/_site/")({
           "In-person psychotherapy in Oakville and online therapy across the GTA and Ontario, including Burlington, Toronto, Mississauga, Brampton, Hamilton and London.",
       },
     ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": ["LocalBusiness", "ProfessionalService"],
-          name: "Sparks Psychotherapy Services",
-          description:
-            "Compassionate in-person and online psychotherapy for adults and teens in Oakville, the Greater Toronto Area and Ontario, supporting anxiety, depression, grief, relationships and life transitions.",
-          url: "https://sparkspsychotherapy.ca/",
-          telephone: "+1-365-977-0155",
-          email: "info@sparkspsychotherapy.ca",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "1155 North Service Road",
-            addressLocality: "Oakville",
-            addressRegion: "ON",
-            postalCode: "L6M 3E3",
-            addressCountry: "CA",
-          },
-          geo: { "@type": "GeoCoordinates", latitude: 43.43568, longitude: -79.71445 },
-          areaServed: [
-            { "@type": "City", name: "Oakville" },
-            { "@type": "City", name: "Burlington" },
-            { "@type": "City", name: "Toronto" },
-            { "@type": "City", name: "Mississauga" },
-            { "@type": "City", name: "Brampton" },
-            { "@type": "City", name: "Hamilton" },
-            { "@type": "City", name: "London" },
-            { "@type": "AdministrativeArea", name: "Greater Toronto Area" },
-            { "@type": "AdministrativeArea", name: "Ontario" },
-          ],
-          hasOfferCatalog: {
-            "@type": "OfferCatalog",
-            name: "Psychotherapy Services",
-            itemListElement: [
-              "Anxiety & Stress",
-              "Depression",
-              "Emotional Wellness",
-              "Couples Counselling",
-              "Teen Therapy",
-              "Adoption Counselling",
-              "Family Therapy",
-            ].map((name) => ({
-              "@type": "Offer",
-              itemOffered: { "@type": "Service", name },
-            })),
-          },
-        }),
-      },
-    ],
   }),
   component: HomePage,
 });

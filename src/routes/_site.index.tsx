@@ -15,10 +15,10 @@ export const Route = createFileRoute("/_site/")({
     meta: [
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:type", content: "website" },
-      { title: "Psychotherapist in Oakville & the GTA | Sparks Psychotherapy Services" },
+      { title: "Registered Psychotherapist | Sparks Psychotherapy" },
       {
         property: "og:title",
-        content: "Psychotherapist in Oakville & the GTA | Sparks Psychotherapy Services",
+        content: "Registered Psychotherapist | Sparks Psychotherapy",
       },
       {
         property: "og:description",

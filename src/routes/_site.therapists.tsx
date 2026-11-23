@@ -69,29 +69,6 @@ function TherapistsPage() {
                 <p className="text-xl text-primary mt-1">{t.credentials}</p>
               </div>
               <p className="text-2xl leading-relaxed text-foreground/80 flex-1">{t.bio}</p>
-              <div>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">
-                  Specialties
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {t.specialties.map((s) => (
-                    <span
-                      key={s}
-                      className="text-xs bg-secondary/40 text-foreground/80 rounded-full px-3 py-1"
-                    >
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 self-start uppercase tracking-widest text-xs text-primary border-b border-primary pb-1"
-              >
-                Book a Consultation
-              </a>
             </div>
           </article>
         ))}

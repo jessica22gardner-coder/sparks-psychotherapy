@@ -119,7 +119,7 @@ function ContactPage() {
 
         <form
           onSubmit={handleSubmit}
-          className="md:col-span-3 bg-card border border-border rounded-3xl p-8 space-y-4 shadow-soft"
+          className="md:col-span-3 self-start bg-card border border-border rounded-3xl p-8 space-y-4 shadow-soft"
         >
           {status === "sent" ? (
             <div className="text-center py-12 space-y-3">

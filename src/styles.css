@@ -84,6 +84,24 @@
     border-color: var(--color-border);
   }
 
+  /* Type scales down on smaller screens so the site reads right on
+   * phones and tablets; desktop keeps the approved sizes. Everything
+   * sized in rem (text and spacing) scales together, so the design
+   * stays proportional. */
+  html {
+    font-size: 100%;
+  }
+  @media (max-width: 767px) {
+    html {
+      font-size: 81.25%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);

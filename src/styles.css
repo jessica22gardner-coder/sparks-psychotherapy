@@ -24,6 +24,26 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
+  /* Type scale — the middle ground between the 18px body that read too
+   * small and the 25px body that read too big. Grounded in the
+   * therapy-practice standard and Shift Cognitive Therapy's site
+   * (shiftct.com): body 18px, largest heading 36px, section heading
+   * 24px, nav 14px. This scale keeps body a touch above Shift's 18px
+   * and headings present without shouting. text-base (nav), text-sm
+   * and text-xs keep Tailwind's defaults. */
+  --text-lg: 0.875rem;
+  --text-lg--line-height: 1.25rem;
+  --text-xl: 1.125rem;
+  --text-2xl: 1.25rem;
+  --text-3xl: 1.5rem;
+  --text-4xl: 1.875rem;
+  --text-5xl: 2.25rem;
+  --text-5xl--line-height: 1.1;
+  --text-6xl: 3rem;
+  --text-6xl--line-height: 1.1;
+  --text-7xl: 3.5rem;
+  --text-7xl--line-height: 1.1;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -84,21 +104,21 @@
     border-color: var(--color-border);
   }
 
-  /* Type scales down on smaller screens so the site reads right on
-   * phones and tablets; desktop keeps the approved sizes. Everything
-   * sized in rem (text and spacing) scales together, so the design
-   * stays proportional. */
+  /* Type scales down a little on smaller screens so the site reads
+   * right on phones and tablets; desktop keeps the sizes above.
+   * Everything sized in rem (text and spacing) scales together, so
+   * the design stays proportional. */
   html {
     font-size: 100%;
   }
   @media (max-width: 767px) {
     html {
-      font-size: 81.25%;
+      font-size: 87.5%;
     }
   }
   @media (min-width: 768px) and (max-width: 1023px) {
     html {
-      font-size: 87.5%;
+      font-size: 93.75%;
     }
   }
 
@@ -106,7 +126,7 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-size: 1.5625rem;
+    font-size: 1.1875rem;
     -webkit-font-smoothing: antialiased;
   }
 

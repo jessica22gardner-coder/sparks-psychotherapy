@@ -101,9 +101,9 @@ function SpeakingPage() {
       <section className="relative isolate overflow-hidden">
         <img
           src={workshop}
-          alt="An audience applauding a speaker during a workshop"
-          width={1000}
-          height={667}
+          alt="An audience watching a speaker's presentation during a workshop"
+          width={1200}
+          height={800}
           fetchPriority="high"
           className="absolute inset-0 h-full w-full object-cover"
         />

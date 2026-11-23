@@ -77,7 +77,7 @@ function ContactPage() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 pb-20 grid md:grid-cols-5 gap-10">
+      <section className="mx-auto max-w-7xl px-6 pb-20 grid md:grid-cols-5 gap-16">
         <div className="md:col-span-2 space-y-6">
           <div className="flex items-start gap-3">
             <Phone className="text-primary mt-1" size={20} />

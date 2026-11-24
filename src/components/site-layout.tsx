@@ -70,6 +70,7 @@ function Header() {
   const [mobileServices, setMobileServices] = useState(false);
   const pathname = useLocation({ select: (s) => s.pathname });
   const servicesRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
 
   // Every navigation closes the menus and resets the dropdowns, so no
   // open menu carries over onto the next page. The header stays mounted
@@ -82,15 +83,30 @@ function Header() {
     setOpen(false);
   }, [pathname]);
 
-  // Close the Services dropdown on Escape or a click/tap outside it.
+  // Whenever the mobile menu closes, collapse its Services section too,
+  // so reopening the menu never shows it still expanded.
   useEffect(() => {
-    if (!servicesOpen) return;
+    if (!open) setMobileServices(false);
+  }, [open]);
+
+  // Close the menus on Escape, and close each menu on a click/tap
+  // outside it: the desktop Services dropdown, and the mobile menu
+  // (a tap anywhere outside the header).
+  useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setServicesOpen(false);
+      if (e.key !== "Escape") return;
+      setServicesOpen(false);
+      setOpen(false);
+      setMobileServices(false);
     };
     const onPointerDown = (e: PointerEvent) => {
-      if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) {
+      const target = e.target as Node;
+      if (servicesRef.current && !servicesRef.current.contains(target)) {
         setServicesOpen(false);
+      }
+      if (open && headerRef.current && !headerRef.current.contains(target)) {
+        setOpen(false);
+        setMobileServices(false);
       }
     };
     document.addEventListener("keydown", onKeyDown);
@@ -99,10 +115,10 @@ function Header() {
       document.removeEventListener("keydown", onKeyDown);
       document.removeEventListener("pointerdown", onPointerDown);
     };
-  }, [servicesOpen]);
+  }, [open]);
 
   return (
-    <header className="bg-background relative z-10">
+    <header ref={headerRef} className="bg-background relative z-10">
       <div className="mx-auto max-w-7xl px-6 h-[160px] md:h-[200px] grid grid-cols-2 xl:grid-cols-[1fr_auto_1fr] gap-5 items-center">
         <nav className="hidden xl:flex items-center gap-6 text-base tracking-wide -translate-y-8 text-foreground/80">
           {primaryNav.map((l) => (

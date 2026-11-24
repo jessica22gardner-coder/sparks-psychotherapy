@@ -1,4 +1,4 @@
-import { Link, Outlet } from "@tanstack/react-router";
+import { Link, Outlet, useLocation } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -68,6 +68,39 @@ function Header() {
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServices, setMobileServices] = useState(false);
+  const pathname = useLocation({ select: (s) => s.pathname });
+  const servicesRef = useRef<HTMLDivElement>(null);
+
+  // Every navigation closes the menus and resets the dropdowns, so no
+  // open menu carries over onto the next page. The header stays mounted
+  // across client-side navigations, so without this the Services
+  // dropdown stayed open on the new page, which is what made pages feel
+  // like they were loading into one another.
+  useEffect(() => {
+    setServicesOpen(false);
+    setMobileServices(false);
+    setOpen(false);
+  }, [pathname]);
+
+  // Close the Services dropdown on Escape or a click/tap outside it.
+  useEffect(() => {
+    if (!servicesOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setServicesOpen(false);
+    };
+    const onPointerDown = (e: PointerEvent) => {
+      if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) {
+        setServicesOpen(false);
+      }
+    };
+    document.addEventListener("keydown", onKeyDown);
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("pointerdown", onPointerDown);
+    };
+  }, [servicesOpen]);
+
   return (
     <header className="bg-background relative z-10">
       <div className="mx-auto max-w-7xl px-6 h-[160px] md:h-[200px] grid grid-cols-2 xl:grid-cols-[1fr_auto_1fr] gap-5 items-center">
@@ -82,14 +115,16 @@ function Header() {
               {l.label}
             </Link>
           ))}
-          <div
-            className="relative"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
-          >
-            <span className="uppercase inline-flex items-center gap-1 cursor-default hover:text-primary transition-colors">
+          <div className="relative" ref={servicesRef}>
+            <button
+              type="button"
+              aria-haspopup="true"
+              aria-expanded={servicesOpen}
+              onClick={() => setServicesOpen((v) => !v)}
+              className="uppercase inline-flex items-center gap-1 hover:text-primary transition-colors"
+            >
               Services <ChevronDown size={14} />
-            </span>
+            </button>
             {servicesOpen && (
               <div className="absolute left-0 top-full pt-3 z-40">
                 <div className="bg-card border border-border rounded-2xl shadow-soft p-3 w-72 grid grid-cols-1 gap-1">
@@ -102,6 +137,7 @@ function Header() {
                       key={s.slug}
                       to="/services/$slug"
                       params={{ slug: s.slug }}
+                      onClick={() => setServicesOpen(false)}
                       className="rounded-lg px-3 py-2 text-sm text-foreground/85 hover:bg-secondary/30 hover:text-primary transition-colors normal-case tracking-normal"
                     >
                       {s.title}

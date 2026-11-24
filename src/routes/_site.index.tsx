@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { PageLink } from "@/components/page-link";
 import { SquareCheck } from "lucide-react";
 import portrait from "@/assets/jess-hero.jpg";
 import portrait2 from "@/assets/jess-home-about.jpg";
@@ -110,12 +111,12 @@ function HomePage() {
               the way we do for a reason. It sparked a lifelong curiosity to understand emotions,
               behaviour, and the stories we carry.
             </p>
-            <Link
+            <PageLink
               to="/about"
               className="inline-block uppercase tracking-widest text-xs text-primary border-b border-primary pb-1 hover:opacity-80"
             >
               My Story
-            </Link>
+            </PageLink>
           </div>
         </div>
         <div className="md:col-span-2">

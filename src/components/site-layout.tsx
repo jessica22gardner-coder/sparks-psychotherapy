@@ -1,4 +1,5 @@
-import { Link, Outlet, useLocation } from "@tanstack/react-router";
+import { Outlet, useLocation } from "@tanstack/react-router";
+import { PageLink } from "@/components/page-link";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -48,8 +49,7 @@ function Logo({
 }) {
   const logoSize = variant === "header" ? "h-24 md:h-32 w-auto" : "h-20 w-auto";
   return (
-    <Link
-      preload="render"
+    <PageLink
       to="/"
       className="flex items-center leading-none"
       aria-label="Sparks Psychotherapy Services - home"
@@ -61,7 +61,7 @@ function Logo({
         height={312}
         className={`${logoSize} ${light ? "brightness-0 invert" : ""}`}
       />
-    </Link>
+    </PageLink>
   );
 }
 
@@ -123,15 +123,13 @@ function Header() {
       <div className="mx-auto max-w-7xl px-6 h-[160px] md:h-[200px] grid grid-cols-2 xl:grid-cols-[1fr_auto_1fr] gap-5 items-center">
         <nav className="hidden xl:flex items-center gap-6 text-base tracking-wide -translate-y-8 text-foreground/80">
           {primaryNav.map((l) => (
-            <Link
-              preload="render"
+            <PageLink
               key={l.to}
               to={l.to}
-              className="uppercase hover:text-primary transition-colors"
-              activeProps={{ className: "text-primary font-medium" }}
+              className={`uppercase hover:text-primary transition-colors ${pathname === l.to ? "text-primary font-medium" : ""}`}
             >
               {l.label}
-            </Link>
+            </PageLink>
           ))}
           <div className="relative" ref={servicesRef}>
             <button
@@ -151,8 +149,7 @@ function Header() {
                   </span>
                   <div className="h-px bg-border my-1" />
                   {services.map((s) => (
-                    <Link
-                      preload="render"
+                    <PageLink
                       key={s.slug}
                       to="/services/$slug"
                       params={{ slug: s.slug }}
@@ -160,7 +157,7 @@ function Header() {
                       className="rounded-lg px-3 py-2 text-sm text-foreground/85 hover:bg-secondary/30 hover:text-primary transition-colors normal-case tracking-normal"
                     >
                       {s.title}
-                    </Link>
+                    </PageLink>
                   ))}
                 </div>
               </div>
@@ -171,28 +168,24 @@ function Header() {
           <Logo variant="header" />
         </div>
         <div className="hidden xl:flex items-center justify-end gap-6 text-base -translate-y-8">
-          <Link
-            preload="render"
+          <PageLink
             to="/speaking"
-            className="uppercase tracking-wide text-foreground/80 hover:text-primary"
-            activeProps={{ className: "text-primary font-medium" }}
+            className={`uppercase tracking-wide text-foreground/80 hover:text-primary ${pathname === "/speaking" ? "text-primary font-medium" : ""}`}
           >
             Speaking & Workshops
-          </Link>
-          <Link
-            preload="render"
+          </PageLink>
+          <PageLink
             to="/blog"
             className="uppercase tracking-wide text-foreground/80 hover:text-primary"
           >
             Blog
-          </Link>
-          <Link
-            preload="render"
+          </PageLink>
+          <PageLink
             to="/contact"
             className="uppercase tracking-wide text-foreground/80 hover:text-primary"
           >
             Contact
-          </Link>
+          </PageLink>
         </div>
         <Button
           variant="ghost"
@@ -207,15 +200,14 @@ function Header() {
       {open && (
         <div className="xl:hidden border-t border-border px-6 py-4 flex flex-col gap-3 bg-background">
           {primaryNav.map((l) => (
-            <Link
-              preload="render"
+            <PageLink
               key={l.to}
               to={l.to}
               onClick={() => setOpen(false)}
               className="uppercase text-base text-foreground/80"
             >
               {l.label}
-            </Link>
+            </PageLink>
           ))}
           <button
             className="uppercase text-base text-foreground/80 flex items-center justify-between"
@@ -227,8 +219,7 @@ function Header() {
             <div className="pl-3 flex flex-col gap-2">
               <span className="text-xs uppercase text-primary tracking-widest">All Services</span>
               {services.map((s) => (
-                <Link
-                  preload="render"
+                <PageLink
                   key={s.slug}
                   to="/services/$slug"
                   params={{ slug: s.slug }}
@@ -236,34 +227,31 @@ function Header() {
                   className="text-xl text-foreground/80"
                 >
                   {s.title}
-                </Link>
+                </PageLink>
               ))}
             </div>
           )}
-          <Link
-            preload="render"
+          <PageLink
             to="/speaking"
             onClick={() => setOpen(false)}
             className="uppercase text-base text-foreground/80"
           >
             Speaking & Workshops
-          </Link>
-          <Link
-            preload="render"
+          </PageLink>
+          <PageLink
             to="/blog"
             onClick={() => setOpen(false)}
             className="uppercase text-base text-foreground/80"
           >
             Blog
-          </Link>
-          <Link
-            preload="render"
+          </PageLink>
+          <PageLink
             to="/contact"
             onClick={() => setOpen(false)}
             className="uppercase text-base text-foreground/80"
           >
             Contact
-          </Link>
+          </PageLink>
           <a
             href={BOOKING_URL}
             target="_blank"
@@ -344,9 +332,9 @@ function Footer() {
         <div className="text-xl space-y-2">
           <p className="uppercase tracking-wider opacity-75 mb-3">Explore</p>
           {footerNav.map((l) => (
-            <Link preload="render" key={l.to} to={l.to} className="block hover:underline">
+            <PageLink key={l.to} to={l.to} className="block hover:underline">
               {l.label}
-            </Link>
+            </PageLink>
           ))}
         </div>
         <div className="text-xl space-y-2">
@@ -419,8 +407,8 @@ export function CtaButton({ to, children }: { to: string; children: React.ReactN
     );
   }
   return (
-    <Link preload="render" to={to} className={className}>
+    <PageLink to={to} className={className}>
       {children}
-    </Link>
+    </PageLink>
   );
 }

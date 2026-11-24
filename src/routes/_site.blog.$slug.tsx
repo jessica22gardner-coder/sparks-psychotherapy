@@ -1,4 +1,5 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, notFound } from "@tanstack/react-router";
+import { PageLink } from "@/components/page-link";
 import { getBlogPost, blogPosts } from "@/lib/blog-data";
 
 export const Route = createFileRoute("/_site/blog/$slug")({
@@ -66,9 +67,9 @@ function BlogPostPage() {
   return (
     <>
       <article className="mx-auto max-w-3xl px-6 pt-10 md:pt-16 pb-16">
-        <Link to="/blog" className="uppercase tracking-widest text-xs text-primary">
+        <PageLink to="/blog" className="uppercase tracking-widest text-xs text-primary">
           ← Back to Journal
-        </Link>
+        </PageLink>
         <time
           dateTime={post.date}
           className="block mt-8 uppercase tracking-widest text-xs text-foreground/60"
@@ -100,7 +101,7 @@ function BlogPostPage() {
             <h2 className="text-3xl font-serif mb-8">Keep reading</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {others.map((p) => (
-                <Link
+                <PageLink
                   key={p.slug}
                   to="/blog/$slug"
                   params={{ slug: p.slug }}
@@ -122,7 +123,7 @@ function BlogPostPage() {
                     </time>
                     <h3 className="text-2xl mt-2">{p.title}</h3>
                   </div>
-                </Link>
+                </PageLink>
               ))}
             </div>
           </div>
@@ -140,12 +141,12 @@ function BlogNotFound() {
         The article you're looking for isn't here. Head back to the journal to browse the latest
         reflections.
       </p>
-      <Link
+      <PageLink
         to="/blog"
         className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-full uppercase tracking-widest text-xs"
       >
         Back to Journal
-      </Link>
+      </PageLink>
     </section>
   );
 }

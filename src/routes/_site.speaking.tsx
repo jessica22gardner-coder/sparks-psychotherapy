@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { PageLink } from "@/components/page-link";
 import {
   Building2,
   Flower2,
@@ -139,7 +140,7 @@ function SpeakingPage() {
                 size="lg"
                 className="h-12 rounded-full bg-sand text-sand-foreground hover:bg-sand/90"
               >
-                <Link to="/contact">Invite Jess to Speak</Link>
+                <PageLink to="/contact">Invite Jess to Speak</PageLink>
               </Button>
             </div>
           </div>
@@ -209,7 +210,7 @@ function SpeakingPage() {
                           size="lg"
                           className="h-auto min-h-12 rounded-full whitespace-normal bg-sand text-sand-foreground hover:bg-sand/90"
                         >
-                          <Link to="/contact">Invite Jess to Speak</Link>
+                          <PageLink to="/contact">Invite Jess to Speak</PageLink>
                         </Button>
                         <Button asChild variant="outline" size="lg" className="h-12 rounded-full">
                           <a

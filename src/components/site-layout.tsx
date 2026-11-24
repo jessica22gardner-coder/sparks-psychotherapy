@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { services } from "@/lib/services-data";
@@ -49,6 +49,7 @@ function Logo({
   const logoSize = variant === "header" ? "h-24 md:h-32 w-auto" : "h-20 w-auto";
   return (
     <Link
+      preload="render"
       to="/"
       className="flex items-center leading-none"
       aria-label="Sparks Psychotherapy Services - home"
@@ -123,6 +124,7 @@ function Header() {
         <nav className="hidden xl:flex items-center gap-6 text-base tracking-wide -translate-y-8 text-foreground/80">
           {primaryNav.map((l) => (
             <Link
+              preload="render"
               key={l.to}
               to={l.to}
               className="uppercase hover:text-primary transition-colors"
@@ -150,6 +152,7 @@ function Header() {
                   <div className="h-px bg-border my-1" />
                   {services.map((s) => (
                     <Link
+                      preload="render"
                       key={s.slug}
                       to="/services/$slug"
                       params={{ slug: s.slug }}
@@ -169,6 +172,7 @@ function Header() {
         </div>
         <div className="hidden xl:flex items-center justify-end gap-6 text-base -translate-y-8">
           <Link
+            preload="render"
             to="/speaking"
             className="uppercase tracking-wide text-foreground/80 hover:text-primary"
             activeProps={{ className: "text-primary font-medium" }}
@@ -176,12 +180,14 @@ function Header() {
             Speaking & Workshops
           </Link>
           <Link
+            preload="render"
             to="/blog"
             className="uppercase tracking-wide text-foreground/80 hover:text-primary"
           >
             Blog
           </Link>
           <Link
+            preload="render"
             to="/contact"
             className="uppercase tracking-wide text-foreground/80 hover:text-primary"
           >
@@ -202,6 +208,7 @@ function Header() {
         <div className="xl:hidden border-t border-border px-6 py-4 flex flex-col gap-3 bg-background">
           {primaryNav.map((l) => (
             <Link
+              preload="render"
               key={l.to}
               to={l.to}
               onClick={() => setOpen(false)}
@@ -221,6 +228,7 @@ function Header() {
               <span className="text-xs uppercase text-primary tracking-widest">All Services</span>
               {services.map((s) => (
                 <Link
+                  preload="render"
                   key={s.slug}
                   to="/services/$slug"
                   params={{ slug: s.slug }}
@@ -233,6 +241,7 @@ function Header() {
             </div>
           )}
           <Link
+            preload="render"
             to="/speaking"
             onClick={() => setOpen(false)}
             className="uppercase text-base text-foreground/80"
@@ -240,6 +249,7 @@ function Header() {
             Speaking & Workshops
           </Link>
           <Link
+            preload="render"
             to="/blog"
             onClick={() => setOpen(false)}
             className="uppercase text-base text-foreground/80"
@@ -247,6 +257,7 @@ function Header() {
             Blog
           </Link>
           <Link
+            preload="render"
             to="/contact"
             onClick={() => setOpen(false)}
             className="uppercase text-base text-foreground/80"
@@ -333,7 +344,7 @@ function Footer() {
         <div className="text-xl space-y-2">
           <p className="uppercase tracking-wider opacity-75 mb-3">Explore</p>
           {footerNav.map((l) => (
-            <Link key={l.to} to={l.to} className="block hover:underline">
+            <Link preload="render" key={l.to} to={l.to} className="block hover:underline">
               {l.label}
             </Link>
           ))}
@@ -360,9 +371,23 @@ function Footer() {
   );
 }
 
+function ScrollToTop() {
+  const pathname = useLocation({ select: (s) => s.pathname });
+  // Scroll to the top before the new page paints, so a navigation never
+  // first shows the new page at the old scroll position and then jumps.
+  // That jump, plus the old page lingering while the next page's code
+  // loads, is what made moving between pages feel like stepping through
+  // a form instead of loading a fresh page.
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
 export function SiteLayout() {
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       <TopBar />
       <Header />
       <main className="flex-1">
@@ -394,7 +419,7 @@ export function CtaButton({ to, children }: { to: string; children: React.ReactN
     );
   }
   return (
-    <Link to={to} className={className}>
+    <Link preload="render" to={to} className={className}>
       {children}
     </Link>
   );
